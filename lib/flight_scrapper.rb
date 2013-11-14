@@ -1,12 +1,14 @@
-class FlightScrapper
+require "flight_scrapper/version"
+require "flight_scrapper/easyjet_supplier"
 
-	@@suppliers = ['U2']
+module FlightScrapper
 
-	def self.get_suppliers
-		@@suppliers
-	end
+	SUPPLIERS = { 'U2' => EasyjetSupplier.new }
+	
+	module_function
 
-	def search
+	def get_suppliers
+		SUPPLIERS
 	end
 	
 end
