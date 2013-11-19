@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "flight_scrapper"
   spec.version       = FlightScrapper::VERSION
   spec.authors       = ["Martí Serra"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.email         = ["marti.serra.alabau@gmail.com"]
   spec.description   = %q{Scrapper for Flight Availability and Prices}
   spec.summary       = %q{Flight Suppliers included in this gem: Easyjet}
   spec.homepage      = ""
