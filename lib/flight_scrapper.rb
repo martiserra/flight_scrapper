@@ -1,5 +1,5 @@
 require "flight_scrapper/version"
-require "flight_scrapper/easyjet_supplier"
+require "flight_scrapper/easyjet/easyjet_supplier"
 
 module FlightScrapper
 
