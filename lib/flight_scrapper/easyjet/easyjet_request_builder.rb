@@ -1,3 +1,5 @@
+require_relative '../search_criteria'
+
 module FlightScrapper
 
 	class EasyjetRequestBuilder
@@ -10,13 +12,13 @@ module FlightScrapper
 			url += '&dest=' + search_criteria.destination
 			url += '&dd=' + search_criteria.outbound_date.strftime('%d/%m/%Y')
 			url += '&rd=' + search_criteria.inbound_date.strftime('%d/%m/%Y')
-			url += '&apax=' + search_criteria.adults
+			url += '&apax=' + search_criteria.adults.to_s
 			url += '&pid=www.easyjet.com'
-			url += '&cpax=' + search_criteria.childs
-			url += '&ipax=' + search_criteria.infants
+			url += '&cpax=' + search_criteria.childs.to_s
+			url += '&ipax=' + search_criteria.infants.to_s
 			url += '&lang=EN'
 			url += '&isOneWay=off'
-			url += '&searchFrom=SearchPod|/en'
+			url += '&searchFrom=SearchPod|/en/'
 
 			url
 		end
