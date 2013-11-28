@@ -14,6 +14,20 @@ FactoryGirl.define do
 
       initialize_with { SearchCriteria.new(origin, destination, outbound_date, inbound_date, adults, childs, infants) }
     end
+
+    trait :one_way_all_passenger_types do
+      ignore do
+        origin 'BCN'
+        destination 'LTN'
+        outbound_date Date.new(2014,1,18) 
+        inbound_date nil
+        adults 1
+        childs 1
+        infants 1
+      end
+
+      initialize_with { SearchCriteria.new(origin, destination, outbound_date, inbound_date, adults, childs, infants) }
+    end
   
   end
 end
