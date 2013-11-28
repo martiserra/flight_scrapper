@@ -11,5 +11,9 @@ class SearchCriteria
 		@childs = childs
 		@infants = infants
 	end
+
+	def is_one_way?
+		@inbound_date.nil?
+	end
 	
 end
