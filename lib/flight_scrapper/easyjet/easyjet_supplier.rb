@@ -3,16 +3,16 @@ require_relative 'easyjet_request_builder'
 
 module FlightScrapper
 
-	class EasyjetSupplier
+  class EasyjetSupplier
 
-		def search search_criteria
-			agent = Mechanize.new { |agent|
-	      agent.user_agent_alias = 'Mac Safari'
-	    }
+    def search search_criteria
+      agent = Mechanize.new { |agent|
+        agent.user_agent_alias = 'Mac Safari'
+      }
 
-	    results_page = agent.get(EasyjetRequestBuilder.build_url search_criteria)
-		end
-		
-	end
+      results_page = agent.get(EasyjetRequestBuilder.build_url search_criteria)
+    end
+    
+  end
 
 end
