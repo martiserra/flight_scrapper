@@ -1,0 +1,2065 @@
+
+
+
+<!doctype html> 
+ 
+
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta charset="utf-8" />
+
+
+<script type="text/javascript" id="tagman">
+
+    (function (w) {
+        w.tm2BootPosition = 0;
+        w.tm2BootAsync = true;
+        w.tmPageId = 14;
+        w.tmParam = { email:'', destination:'LTN', country_code:'EN', product_type:'Flight', number_adults:'1', number_children:'0', number_infants:'0' };
+        var conf = { host: 'pfa.levexis.com',
+            account: 'easyjet',
+            version: '3',
+            async: true,
+            cdn: (location.protocol === 'https:') ? 'sec.levexis.com' : 'res.levexis.com',
+            waitService: 'wt.tagman.com',
+            waitTest: false,
+            bootstrap: true,
+            param: w.tmParam || {}
+        };
+        // do not change values below this line
+        function ap(sr, ol) {
+            var e = document.createElement('script');
+            e.src = sr;
+            e.async = true;
+            if (ol) {
+                e.onload = e.onerror = function () { if (!this.loaded) { ol(); this.loaded = true; } };
+                e.onreadystatechange = function () { if (this.readyState === 'complete' || this.readyState === 'loaded') { this.onload(); } };
+            }
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(e, s);
+        }
+        w.TMAN = w.TMAN || {};
+        w.TMAN.startTime = +new Date();
+        w.TMAN.asyncLoader = function () {
+            TMAN.addContainer(new TMAN.Container(conf.account, w.tmPageId, conf));
+        };
+        var tm = '//' + conf.cdn + '/clientfiles/v' + conf.version + '/' + conf.account + '.js';
+        if (conf.waitService && conf.waitTest) ap('//' + conf.waitService + '/wait/0/' + Math.random(), function () { TMAN.waitLatency = new Date() - TMAN.startTime; });
+        if (conf.async) {
+            w.TMAN.position = {};
+            w.TMAN.doTags = function (p) { TMAN.currentPosition = p; };
+            w.TMAN.addParam = function (n, v) {
+                w.tmParam[n] = v;
+            };
+            w.TMAN.addParams = function (c, p) {
+                for (var n in p) {
+                    w.tmParam[n] = p[n];
+                }
+            };
+            ap(tm);
+        } else {
+            document.write('<script src="' + tm + '"><\/script>');
+        }
+    })(window);</script><script>TMAN.doTags(TMAN.position.TOP_HEAD);</script>
+    <title>Step 1 - Flights - Booking - easyJet.com</title>
+    
+    <link href="/Content/Css/Common?v=IwPgZ2mxebJyA3qEnHlGp8uvMOUMFyzUTy21WZn1p301" rel="stylesheet"/>
+
+    
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="/Content/CSS/ie6-hacks.css" />
+  <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="/Content/CSS/ie7-hacks.css" />
+  <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/Content/CSS/ie8-hacks.css" />
+  <![endif]-->
+  
+    <script type="text/javascript">
+        var basketCanFloat = true;
+        var timoutUrl = '/EN/BasketView.mvc/RegisterTimeoutError';
+    </script>
+
+            
+            <!-- Common control to ouput included javascript files-->
+            <script src="/scripts/common?v=eHa10ubR20Tb_Ea72jLaBaaTSlbX8B2ynrNumuITiVw1"></script>
+
+        
+    <script src="/scripts/Booking?v=tFnPl26b7lG7ldy8Emy6Si2XXfXzOzj2yPyCxm5lQXA1"></script>
+<script src="/scripts/BookingStep1?v=1EeAKw2CTlGkSNzvz11dn0KcPKq0cZlBXE6ZLgz6XnA1"></script>
+
+    <link rel="Stylesheet" type="text/css" href="/Content/CSS/pricechanged.css" />
+    <link href="/Content/Css/Booking?v=RfAoKNoAFCK4LShFHHJTODFpog3oHv4EMnEN-50wYbw1" rel="stylesheet"/>
+<link href="/Content/Css/UiCoreThemeDatepicker?v=VHOVNw5yGFKlA4viGjLRWSK2GF8NQm1O_QocTB0TePo1" rel="stylesheet"/>
+
+  <link rel="Stylesheet" type="text/css" href="/Content/CSS/iconsprites.css" />
+
+     
+      <!-- add language specific styling -->
+     
+
+    <script type="text/javascript">
+        
+        sessionTimeoutInMinutes = 20;
+        sessionTimeoutUrl = '/EN/';
+
+        var effectDateMessages = new Array(); 
+        effectDateMessages['FlightDateBeforeRouteStartErrorMessage'] = 'The route you have selected will be available from {0}. \nPlease check the \'Timetables\' section of the site for full details of all easyJet routes.';
+        effectDateMessages['FlightDateAfterRouteEndErrorMessage'] = 'The route you have selected is for sale until {0}. \nPlease check the \'Timetables\' section of the site for full details of all easyJet routes.';
+    
+        effectDateMessages['BeforeRouteStartAlternativeOrigin'] = 'The route you have selected will be available from {0}.  We can still get you on your way with this alternative choice of departure airport:\n\n';
+        effectDateMessages['AfterRouteEndAlternativeOrigin'] = 'The route you have selected is for sale until {0}.  We can still get you on your way with this alternative choice of departure airport:\n\n';
+        effectDateMessages['BeforeRouteStartAlternativeDestination'] = 'The route you have selected will be available from {0}.  We can still get you on your way with this alternative choice of destination airport:\n\n';
+        effectDateMessages['AfterRouteEndAlternativeDestination'] = 'The route you have selected is for sale until {0}.  We can still get you on your way with this alternative choice of destination airport:\n\n';
+        
+        var NoOriginErrorMessage = 'Please select a departure airport.';
+        var NoDestinationErrorMessage = 'Please choose a destination.';
+        var InvalidOriginErrorMessage = 'No flights available from this location.';
+        var InvalidDestinationErrorMessage = 'No flights available to this location.';
+        var lang = "EN";
+
+        //break out of any frames
+        if (top.location != location) {
+            top.location.href = document.location.href ;
+        }
+        
+        var routeValidator;
+
+        var screenReaderNotifier = {
+            notifierDivId  : "screenReaders",
+            notifierSpanId : "screenReadersNotification",
+            Notify: function(message) {
+                var notifierSpan = document.getElementById(this.notifierSpanId);
+                notifierSpan.setAttribute("role", "alert");
+                notifierSpan.setAttribute("aria-live", "assertive");
+                
+                if(notifierSpan.hasChildNodes()) {
+                    for(var i = 0; i < notifierSpan.childNodes.length; i++) {
+                        notifierSpan.removeChild(notifierSpan.childNodes[i]);
+                    }
+                }
+
+                document.getElementById(this.notifierDivId).style.clip = 'rect(auto, auto, auto, auto)';
+                
+                var alertText = document.createTextNode(message);
+                notifierSpan.appendChild(alertText);
+                // HACK for IE, we have to toggle display so it will read out
+                notifierSpan.style.display='none';
+                notifierSpan.style.display='inline';
+            }
+        };
+
+        $(document).ready(function() {
+
+            // HACK for Chrome (and any other WebKit based browsers) to make SkipLinks work
+            // This may not be required in the future.
+            // Refer to: http://code.google.com/p/chromium/issues/detail?id=37721
+            function WebKitHack() {
+                $('.skipLink').click(function() {
+                    $($(this).attr('href'))
+                        .attr('tabindex', '0')
+                        .focus();
+                });
+            }
+            WebKitHack();
+            $(document).bind('DOMSubtreeModified', WebKitHack);
+            // end HACK
+            
+            if(location.hash.length != 0) {
+                if(location.hash != '#') {
+                    $(location.hash).focus();
+                }
+            }
+            
+            $(window).bind('hashchange', function() {
+                if(location.hash != '#') {
+                    $(location.hash).focus();
+                }
+            });
+            
+            // Price format readout hack
+            window.priceCount = 0;
+            window.updatePricesReadOut = function(selector) {
+                if (selector == null)
+                    throw Error("classname input parameter can not be null or undefined.");
+
+                $(selector).each(function() {
+                    var $this = $(this);
+                    
+                    if(!$this.hasClass("formatedPrice"))
+                        $this.addClass("formatedPrice");
+
+                    if ($this.attr("aria-hidden")) {
+                        $('#' + $(this).attr("aria-describedby")).html($this.text());
+                        $('.' + $(this).attr("id") + "Copy").html($this.text());
+                    } else {
+                        $this.attr("aria-hidden", true).attr("aria-describedby", "price" + window.priceCount).before('<span id="price' + window.priceCount + '" class="hidden">' + $this.text() + '</span>');
+                        window.priceCount++;
+                    }
+                });
+            };
+
+            var priceSelectors =
+                [
+                    ".cellPrice",
+                    ".tripPrice",
+                    'div.optionAdd span.price',
+                    'div.optionAdd span.price',
+                    'div.CarPrice span.price',
+                    'div.optionAdd p.smtxt'
+                    
+                ];
+            
+            window.updatePricesReadOut(priceSelectors.join());
+            
+            $("#basketPanel").bind("basketUpdated", function() {
+                window.updatePricesReadOut(".cellPrice");
+            });
+            // End hack
+
+            if(typeof ac_la != "undefined" && typeof ac_market_groups != "undefined" && typeof ac_a != "undefined") {
+
+                // TODO - refactor. Move messages and instantiation from master.. do not need route validation in every page
+                routeValidator = new Route(ac_la, ac_market_groups, ac_a, effectDateMessages);
+            }
+
+        });
+    </script>
+     
+<script type="text/javascript" src="//service.maxymiser.net/cdn/easyjet/js/mmcore.js" ></script>
+
+<script type="text/javascript" id="googleanalytics">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20704438-1']);
+    _gaq.push(['_setDomainName', 'easyjet.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<script type="text/javascript" id="gaEventTrack">
+
+    
+  function recordOutboundLinkWithLabel(link, category, action, label) {
+        _gat._getTrackerByName()._trackEvent(category, action, label);
+        setTimeout('document.location = "' + link.href + '"', 100);
+    }
+
+    (function ($) {
+      $(document).ready(function () {        
+          var parseUrl = function(input) {
+          var url = input.attr("href");
+          url = url.replace(/^https?:\/\/([^/]+)\/?.*$/i, "$1");         
+          return url;
+        };
+
+      // track navigation links
+       $(".ga-nav a").add("a.ga-nav").each(function () {
+        $(this).bind("click", function() {
+            var navLink = $(this);
+            var url = parseUrl(navLink);
+            var gaTrackingTag = navLink.parent().find("span.ga-tracking-label").text();
+            recordOutboundLinkWithLabel(this, 'Outbound Links', url, gaTrackingTag);
+        });
+      });  
+    
+      // hotels booking pod
+      $(".ga-hotels-pod a").add("a.ga-hotels-pod").each(function (i) {
+        var url = parseUrl($(this));
+        $(this).bind("click", function() { recordOutboundLinkWithLabel(this, 'Outbound Links', url, "Hotels ej2 booking pod"); });
+      }); 
+          
+//    add seat from basket
+          $(".reserveseats").add("a.reserveseats").each(function () {
+        $(this).bind("click", function() {_gat._getTrackerByName()._trackEvent('Seat selection in funnel', 'click', 'Add seat from basket');
+        });
+      });
+
+
+   //Change seats from basket
+          $("#selectseatsfrombasket").add("a#selectseatsfrombasket").each(function () {
+        $(this).bind("click", function() {_gat._getTrackerByName()._trackEvent('Seat selection in funnel', 'click', 'Change seats from basket');
+        });
+      });
+          
+   //Display ej plus 
+      $("#plusCardCheckBox").add("a#plusCardCheckBox").each(function () {
+        $(this).bind("click", function() {if ($(this).is(':checked')) {
+                                              _gat._getTrackerByName()._trackEvent('Seat selection in funnel', 'click', 'Display ej plus from panel')};
+        });
+      });
+          
+    //Add ejplus 
+      $("'select[title='Plus!Card']").add("'select[title='Plus!Card']").each(function () {
+        $(this).bind("click", function() {_gat._getTrackerByName()._trackEvent('Seat selection in funnel', 'click', 'Add ej plus card from panel');
+        });
+      });
+          
+          
+          $("#SeatSelectorDone").add("a#SeatSelectorDone").each(function () {
+        $(this).bind("click", function() {_gat._getTrackerByName()._trackEvent('Seat selection in funnel', 'click', 'Confirmed seat selection from panel');
+        });
+      });
+
+      });
+  })(jQuery);
+</script>
+
+    
+<script>TMAN.doTags(TMAN.position.BOTTOM_HEAD);</script>
+</head>
+<body class="centerAlign">
+<div id="TMAN_TOP_BODY"></div><script>TMAN.doTags(TMAN.position.TOP_BODY);</script><form action="/EN/Booking.mvc/SubmitStep1" id="MainForm" method="post" name="MainForm">
+        <div id="wrapper">
+            <div id="pageWrap">
+            <div>
+                
+ 
+
+<div id="masthead">
+    
+    
+            <div id="VisitorRecognitionContainer" class="floatLeft">      
+             
+
+<script type="text/javascript">
+          
+        jQuery(document).ready(function () {
+            if (typeof VisitorRecognitionPod == 'undefined') {  
+                SetVisitorRecognitionLanguageCode('en');            
+                VistorRecognitionOnLoad();
+            }
+
+            VisitorRecognitionRegisterUrl = '/en/Register';
+            jQuery("#VisitorRecognitionBarPanel").show();
+        });
+    
+</script>
+
+<div id="VisitorRecognitionBarPanel" class="HeaderVisitorRecognitionPanel" style="display:none">
+    <div id="WelcomeBackMessage" class="HeaderVisitorRecognitionMessage">
+    
+        You are signed in as Mart&#237;
+                       <span class="HeaderVisitorRecognitionAuthenticatedEmail"> (user)</span>
+                    
+                 <a class="HeaderVisitorRecognitionLinks" id="vrSignOut" href="#">
+                    Sign Out
+                </a>
+
+        
+   
+    </div>
+</div>
+
+<div style="clear:both; height:0; font-size:0; overflow:hidden"></div>
+
+        
+            </div>
+             
+            <div class="headerSpacer"></div>
+            <div class="clear"></div>
+           
+    <div class="easyjet_HeaderMastHeadSkimmed">
+      <a href="http://www.easyjet.com" class="HomepageEjLogoInMastHead"><img alt="easyJet.com/en home" src="/Content/Images/easyJetImages/logo_easyjet.jpg" /></a>
+       <a href="#SelectFlightsTab" class="skipLink " >Skip To Flight Selection</a>
+<a href="#Basket" class="skipLink " >Skip to Basket</a>
+    </div>
+    
+    <div class="easyjet_HeaderMastHeadSecondSection">
+    
+    
+    </div>
+</div>
+
+            </div>
+            
+            <div id="screenReaders" class="hidden" role="alert">
+                <span id="screenReadersNotification"></span>
+                Screen Reader users please be aware that information appears in your basket and dynamically updates. After you have selected your flights you will need to go to the basket and select CONTINUE.
+                
+            </div>
+                
+
+<div class="breadcrumb">
+    <ul>
+
+        <li class="" title="current step. Choose flights">
+1&nbsp;Flights
+
+        </li>
+
+        <li class="selected" title="Add flight options">
+2&nbsp;Flight options
+
+        </li>
+
+        <li class="selected" title="Choose hotel">
+3&nbsp;Hotels
+
+        </li>
+
+        <li class="selected" title="Choose rental car">
+4&nbsp;Car rental
+
+        </li>
+
+        <li class="selected" title="Passenger details and pay">
+5&nbsp;Checkout
+
+        </li>
+
+        <li class="selected-last" title="View flight confirmation">
+6&nbsp;Confirmation
+
+        </li>
+
+    </ul>
+    <!-- accessibility link-->
+    <a name="content" id="content"></a>
+</div>
+
+                <div class="ColumnLeft">
+                
+                  <noscript>
+                   <div style="background-color:Yellow; color:black; padding:20px;">
+                    <h2 style="color:Red">Browser issue detected!</h2><br />
+                    You may not be aware, but your browser is currently set to disable scripting. This means that our site can't work as well and is harder to use. Enabling scripting takes just a few moments and will let you use features that make booking simple, fast and helpful.<br /><br />
+                    You can find out how to enable scripting in our <a href="http://www.easyjet.com/en/enabling_scripting.html">online help and FAQs section</a> or if you need more assistance please <a href="http://easyjet.custhelp.com/cgi-bin/easyjet.cfg/php/enduser/std_adp.php?p_faqid=3158&amp;p_created=1236079692&amp;p_sid=rJ*eJvsj&amp;p_accessibility=0&amp;p_redirect=&amp;p_lva=&amp;p_sp=cF9zcmNoPTEmcF9zb3J0X2J5PSZwX2dyaWRzb3J0PSZwX3Jvd19jbnQ9NTEsNTEmcF9wcm9kcz0mcF9jYXRzPSZwX3B2PSZwX2N2PSZwX3BhZ2U9MSZwX3NlYXJjaF90ZXh0PWNvbnRhY3Q*&amp;p_li=&amp;p_topview=1">contact us by email or phone</a>.
+                    </div>
+                 </noscript>
+                    
+    
+  <script type="text/javascript">
+      var BasketOptions = 'ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef1478f4fb2e5f16cf6ac2c2ee66d73f4f6f7fffd9f64d3b7c5f2e2599197b38f1eb5f53a1f71ab9379b6bcc84fd6759d2fa7d79b5a7ebb98e502f069de664519017b9e958db67e952faacbfc69d14cabf5b2cd67676dbed88888bc700b8ca5e12de1bd5e65cba2991b3c36a2fc7a5e5d9d54cbb658aef327ebb6ad9683f009deaaccae05db977531cd858ecdcb6ab55e0df772faae6808fec593aac2b7aff2f31c74cffb6f7cf41135ff7655ce9e6417cd719d9f2eb34999cf06313a6bbeb83ecd9aebefe4ed4f16f9d5300a67cdeb365fed6e0084eff78601804c4fb2e66dde620ede146d9937c7cdf362f976783ef08e12abcca6f99cc695d79b9b7f4eb3572f17f9b27d93bdcb37301b37aeb3e5ec4dd566e546982fb36b007c95cd8a4a6678330e2fd7f5749e35f94cc6bb99b078e1759e617a3702fda9bcaeccc40e40fb25ff4f000000ffff';
+    </script>
+    
+      
+        <script type="text/javascript">
+            $(document).ready(function () {
+            
+                $.datepicker.setDefaults($.datepicker.regional['en']);
+            })
+        </script>
+  
+
+<h1 id="FlightSearch">Choose your flight</h1>
+Click on the flight price from the timetable below to add it to your basket. 
+
+
+    <div id="Div1" style="display:inline; line-height:13px;">Prices shown include all taxes, fees and charges– based on payment method selected.</div>
+
+<br /><br />
+
+
+<script type="text/javascript">
+    $('#AddNewFlightOverlayButton').click(function (e) {
+        e.preventDefault();
+    });
+</script>
+
+<div id="FlexiAddNewFlightOverlay" class="addFlexiNewFlightOverlay" role="alertdialog" aria-live="assertive" aria-labelledby="Step1MixedFarePopupTitle" aria-describedby="Step1MixedFarePopupDesc">
+    <div class="searchTable searchOn flexiAddNewFlightOverlay contain">
+        <div class="flexiAddNewFloghtOverlayInner">
+            <h2 id="Step1MixedFarePopupTitle">Sorry</h2>
+            <div class="close"><a id="CloseFlexiAddFlightOverlay">Close</a></div>
+            <div id="Step1MixedFarePopupDesc">
+                
+      <p>All flights must be the same type either <strong>all standard</strong> or <strong>all flexi</strong>.</p>
+      <p>Would you like to remove the flights already in your basket and add new flights?</p>
+    
+                
+            </div>
+            <div style="margin-top: 18px;">
+                <p class='SearchOverlayButton floatLeft contain' ><a role="button"  name="btnAddNewFlightsCancelOverlayButton"  id="AddNewFlightsCancelOverlayButton"  class='selected' href='#' title='Cancel'><span>Cancel</span></a></p>
+            
+                <div style="float: right;">
+                <p class='SearchOverlayButton floatLeft contain' ><a role="button"  name="btnAddNewFlightOverlayButton"  id="AddNewFlightOverlayButton"  class='orangeState' href='#' title='Add new flight'><span>Add new flight</span></a></p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="flexiAddNewFlightOverlayBtm"></div>
+</div>
+
+<div id="StandbyBookFlightOverlay" class="addFlexiNewFlightOverlay" role="alertdialog" aria-live="assertive" aria-labelledby="StandbyStaffTravelPopup" aria-describedby="StandbyStaffTravelPopup">
+    <div class="standbyTandCOverlay">
+        <div style="padding: 38px">
+            <div class="close">
+                <a id="CloseStandbyBookFlightOverlay"></a>        
+            </div>
+        
+            <p id="StandbyStaffTravelPopup">
+       The selection you have made is a Standby Fare.  By booking this fare type, you are not guaranteed a seat until prior to departure at the gate based on availability.
+       <br /><br />
+       <span style="font-weight: bold;">Please note, you are only permitted to take hand baggage on standby bookings.</span>
+       <br /><br />
+       See Standby <a href="https://www.easyjet.com/en/secure/myeasyjet.mvc/viewtermsandconditions" target="_blank">terms and conditions</a> for more information.
+   </p>
+
+
+            <div style="margin-top: 18px;">
+                <p class='SearchOverlayButton floatLeft contain' ><a role="button"  name="btnStandbyCancelOverlayButton"  id="CancelStandbyBookOverlayButton"  class='selected' href='#' title='Cancel'><span>Cancel</span></a></p>
+            
+                <div style="float: right;">
+                <p class='SearchOverlayButton floatLeft contain' ><a role="button"  name="btnStandbyBookOverlayButton"  id="BookStandbyOverlayButton"  class='orangeState' href='#' title='Book'><span>Book</span></a></p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="standbyTandCOverlayBtm"></div>
+</div>
+
+<script type="text/javascript">
+    var CalendarButtonImage = '/Content/Images/easyJetImages/calendar_icon enabled.gif';
+    var LatestMonthEndDate = 'new Date(2014, 9, 31)';
+    var CalendarLanguage = 'en';
+    var RouteSelectorUrl = '/EN/RouteSelector.mvc/Show';
+</script>
+
+<div id="searchDiv" class="searchTable searchOn contain">
+    
+
+<div class="inputs">
+        <script type="text/javascript">
+            var HiddenOriginErrorMsg = "Please type in departure airport.";
+            var HiddenDestinationErrorMsg = "Please type in destination airport.";
+        </script>
+
+        <div id="acOriginAirportError0" class="errorMsg acOriginAirportError acAddMoreFlightsOriginAirportError" aria-hidden="true"></div>
+        <div id="acOriginAirportErrorHidden0" role="alert" aria-live="assertive" class="readOutHidden">&nbsp;</div>
+        <div class="top">
+            <div class="searchControl leftColumn">
+                <label  for="acOriginAirport"  class="label" >Flying from *</label>
+                <input type="text"  name="acOriginAirport"  id="acOriginAirport"  aria-required="true"  aria-live="assertive"  aria-describedby="acOriginAirportError0"  class="acl_input"  onclick="SelectAll('acOriginAirport');" value="Barcelona BCN"/><a title="Show all airports" class="sprite_AutoCompleteDropDownButton acl_showall" id="acOriginAirportShowAll" role="button" href="#" ></a><input type="hidden" tabindex="-1" name="acOriginAirportValue" id="acOriginAirportValue"  value="BCN"/><script language="JavaScript" type="text/javascript">var acOriginAirport_optionList = [{"ST":"Aberdeen ABZ, United Kingdom","DT":"Aberdeen ABZ","ID":"ABZ"},{"ST":"Agadir AGA, Morocco","DT":"Agadir AGA","ID":"AGA"},{"ST":"Ajaccio (Corsica) AJA, France","DT":"Ajaccio (Corsica) AJA","ID":"AJA"},{"ST":"Alghero (Sardinia) AHO, Italy","DT":"Alghero (Sardinia) AHO","ID":"AHO"},{"ST":"Alicante ALC, Spain","DT":"Alicante ALC","ID":"ALC"},{"ST":"Almeria LEI, Spain","DT":"Almeria LEI","ID":"LEI"},{"ST":"Amman AMM, Jordan","DT":"Amman AMM","ID":"AMM"},{"ST":"Amsterdam AMS, Netherlands","DT":"Amsterdam AMS","ID":"AMS"},{"ST":"Antalya AYT, Turkey","DT":"Antalya AYT","ID":"AYT"},{"ST":"Asturias OVD, Spain","DT":"Asturias OVD","ID":"OVD"},{"ST":"Athens ATH, Greece","DT":"Athens ATH","ID":"ATH"},{"ST":"Barcelona BCN, Spain","DT":"Barcelona BCN","ID":"BCN"},{"ST":"Bari BRI, Italy","DT":"Bari BRI","ID":"BRI"},{"ST":"Basel-Mulhouse-Freiburg BSL, Switzerland","DT":"Basel-Mulhouse-Freiburg BSL","ID":"BSL"},{"ST":"Bastia (Corsica) BIA, France","DT":"Bastia (Corsica) BIA","ID":"BIA"},{"ST":"Belfast Intl BFS, United Kingdom","DT":"Belfast Intl BFS","ID":"BFS"},{"ST":"Belgrade BEG, Serbia","DT":"Belgrade BEG","ID":"BEG"},{"ST":"Bergen BGO, Norway","DT":"Bergen BGO","ID":"BGO"},{"ST":"Berlin (All Airports)","DT":"Berlin (All Airports)","ID":"*BR"},{"ST":"Berlin Schoenefeld SXF, Germany","DT":"Berlin Schoenefeld SXF","ID":"SXF"},{"ST":"Biarritz BIQ, France","DT":"Biarritz BIQ","ID":"BIQ"},{"ST":"Bilbao BIO, Spain","DT":"Bilbao BIO","ID":"BIO"},{"ST":"Birmingham BHX, United Kingdom","DT":"Birmingham BHX","ID":"BHX"},{"ST":"Bodrum BJV, Turkey","DT":"Bodrum BJV","ID":"BJV"},{"ST":"Bologna BLQ, Italy","DT":"Bologna BLQ","ID":"BLQ"},{"ST":"Bordeaux BOD, France","DT":"Bordeaux BOD","ID":"BOD"},{"ST":"Bournemouth BOH, United Kingdom","DT":"Bournemouth BOH","ID":"BOH"},{"ST":"Brest (Brittany) BES, France","DT":"Brest (Brittany) BES","ID":"BES"},{"ST":"Brindisi BDS, Italy","DT":"Brindisi BDS","ID":"BDS"},{"ST":"Bristol BRS, United Kingdom","DT":"Bristol BRS","ID":"BRS"},{"ST":"Brussels Intl BRU, Belgium","DT":"Brussels Intl BRU","ID":"BRU"},{"ST":"Bucharest (Otopeni) OTP, Romania","DT":"Bucharest (Otopeni) OTP","ID":"OTP"},{"ST":"Budapest BUD, Hungary","DT":"Budapest BUD","ID":"BUD"},{"ST":"Cagliari (Sardinia) CAG, Italy","DT":"Cagliari (Sardinia) CAG","ID":"CAG"},{"ST":"Canary Islands (All Airports)","DT":"Canary Islands (All Airports)","ID":"*CN"},{"ST":"Casablanca (Mohammed V) CMN, Morocco","DT":"Casablanca (Mohammed V) CMN","ID":"CMN"},{"ST":"Catania (Sicily) CTA, Italy","DT":"Catania (Sicily) CTA","ID":"CTA"},{"ST":"Central Scotland (All Airports)","DT":"Central Scotland (All Airports)","ID":"*SC"},{"ST":"Cologne/Bonn CGN, Germany","DT":"Cologne/Bonn CGN","ID":"CGN"},{"ST":"Copenhagen CPH, Denmark","DT":"Copenhagen CPH","ID":"CPH"},{"ST":"Corfu CFU, Greece","DT":"Corfu CFU","ID":"CFU"},{"ST":"Corsica (All Airports)","DT":"Corsica (All Airports)","ID":"*CO"},{"ST":"Crete (All Airports)","DT":"Crete (All Airports)","ID":"*CR"},{"ST":"Crete (Chania) CHQ, Greece","DT":"Crete (Chania) CHQ","ID":"CHQ"},{"ST":"Crete (Heraklion) HER, Greece","DT":"Crete (Heraklion) HER","ID":"HER"},{"ST":"Cyprus (Larnaca) LCA, Cyprus","DT":"Cyprus (Larnaca) LCA","ID":"LCA"},{"ST":"Cyprus (Paphos) PFO, Cyprus","DT":"Cyprus (Paphos) PFO","ID":"PFO"},{"ST":"Dalaman DLM, Turkey","DT":"Dalaman DLM","ID":"DLM"},{"ST":"Dortmund DTM, Germany","DT":"Dortmund DTM","ID":"DTM"},{"ST":"Dresden DRS, Germany","DT":"Dresden DRS","ID":"DRS"},{"ST":"Dubrovnik DBV, Croatia","DT":"Dubrovnik DBV","ID":"DBV"},{"ST":"Dusseldorf DUS, Germany","DT":"Dusseldorf DUS","ID":"DUS"},{"ST":"Edinburgh EDI, United Kingdom","DT":"Edinburgh EDI","ID":"EDI"},{"ST":"Faro FAO, Portugal","DT":"Faro FAO","ID":"FAO"},{"ST":"Fez FEZ, Morocco","DT":"Fez FEZ","ID":"FEZ"},{"ST":"Figari (Corsica) FSC, France","DT":"Figari (Corsica) FSC","ID":"FSC"},{"ST":"Fuerteventura FUE, Spain","DT":"Fuerteventura FUE","ID":"FUE"},{"ST":"Geneva GVA, Switzerland","DT":"Geneva GVA","ID":"GVA"},{"ST":"Gibraltar GIB, Gibraltar","DT":"Gibraltar GIB","ID":"GIB"},{"ST":"Glasgow GLA, United Kingdom","DT":"Glasgow GLA","ID":"GLA"},{"ST":"Gran Canaria (Las Palmas) LPA, Spain","DT":"Gran Canaria (Las Palmas) LPA","ID":"LPA"},{"ST":"Grenoble GNB, France","DT":"Grenoble GNB","ID":"GNB"},{"ST":"Hamburg HAM, Germany","DT":"Hamburg HAM","ID":"HAM"},{"ST":"Hurghada HRG, Egypt","DT":"Hurghada HRG","ID":"HRG"},{"ST":"Ibiza IBZ, Spain","DT":"Ibiza IBZ","ID":"IBZ"},{"ST":"Innsbruck INN, Austria","DT":"Innsbruck INN","ID":"INN"},{"ST":"Inverness INV, United Kingdom","DT":"Inverness INV","ID":"INV"},{"ST":"Isle of Man IOM, United Kingdom","DT":"Isle of Man IOM","ID":"IOM"},{"ST":"Istanbul - Sabiha Gökçen SAW, Turkey","DT":"Istanbul - Sabiha Gökçen SAW","ID":"SAW"},{"ST":"Ivalo IVL, Finland","DT":"Ivalo IVL","ID":"IVL"},{"ST":"Izmir ADB, Turkey","DT":"Izmir ADB","ID":"ADB"},{"ST":"Jersey JER, United Kingdom","DT":"Jersey JER","ID":"JER"},{"ST":"Kalamata KLX, Greece","DT":"Kalamata KLX","ID":"KLX"},{"ST":"Kefalonia EFL, Greece","DT":"Kefalonia EFL","ID":"EFL"},{"ST":"Kos KGS, Greece","DT":"Kos KGS","ID":"KGS"},{"ST":"Krakow KRK, Poland","DT":"Krakow KRK","ID":"KRK"},{"ST":"La Rochelle LRH, France","DT":"La Rochelle LRH","ID":"LRH"},{"ST":"Lamezia SUF, Italy","DT":"Lamezia SUF","ID":"SUF"},{"ST":"Lanzarote (Arrecife) ACE, Spain","DT":"Lanzarote (Arrecife) ACE","ID":"ACE"},{"ST":"Leeds Bradford LBA, United Kingdom","DT":"Leeds Bradford LBA","ID":"LBA"},{"ST":"Lille LIL, France","DT":"Lille LIL","ID":"LIL"},{"ST":"Lisbon LIS, Portugal","DT":"Lisbon LIS","ID":"LIS"},{"ST":"Liverpool LPL, United Kingdom","DT":"Liverpool LPL","ID":"LPL"},{"ST":"Ljubljana LJU, Slovenia","DT":"Ljubljana LJU","ID":"LJU"},{"ST":"London (All Airports)","DT":"London (All Airports)","ID":"*LO"},{"ST":"London Gatwick LGW, United Kingdom","DT":"London Gatwick LGW","ID":"LGW"},{"ST":"London Luton LTN, United Kingdom","DT":"London Luton LTN","ID":"LTN"},{"ST":"London Southend SEN, United Kingdom","DT":"London Southend SEN","ID":"SEN"},{"ST":"London Stansted STN, United Kingdom","DT":"London Stansted STN","ID":"STN"},{"ST":"Luxembourg LUX, Luxembourg","DT":"Luxembourg LUX","ID":"LUX"},{"ST":"Lyon LYS, France","DT":"Lyon LYS","ID":"LYS"},{"ST":"Madeira (Funchal) FNC, Portugal","DT":"Madeira (Funchal) FNC","ID":"FNC"},{"ST":"Madrid MAD, Spain","DT":"Madrid MAD","ID":"MAD"},{"ST":"Majorca (Palma) PMI, Spain","DT":"Majorca (Palma) PMI","ID":"PMI"},{"ST":"Malaga AGP, Spain","DT":"Malaga AGP","ID":"AGP"},{"ST":"Malta MLA, Maltese Islands","DT":"Malta MLA","ID":"MLA"},{"ST":"Manchester MAN, United Kingdom","DT":"Manchester MAN","ID":"MAN"},{"ST":"Marrakech RAK, Morocco","DT":"Marrakech RAK","ID":"RAK"},{"ST":"Marseille (Provence) MRS, France","DT":"Marseille (Provence) MRS","ID":"MRS"},{"ST":"Menorca (Mahon) MAH, Spain","DT":"Menorca (Mahon) MAH","ID":"MAH"},{"ST":"Milan (All Airports)","DT":"Milan (All Airports)","ID":"*MI"},{"ST":"Milan Linate LIN, Italy","DT":"Milan Linate LIN","ID":"LIN"},{"ST":"Milan Malpensa MXP, Italy","DT":"Milan Malpensa MXP","ID":"MXP"},{"ST":"Montpellier MPL, France","DT":"Montpellier MPL","ID":"MPL"},{"ST":"Moscow Domodedovo DME, Russia","DT":"Moscow Domodedovo DME","ID":"DME"},{"ST":"Munich MUC, Germany","DT":"Munich MUC","ID":"MUC"},{"ST":"Murcia MJV, Spain","DT":"Murcia MJV","ID":"MJV"},{"ST":"Mykonos JMK, Greece","DT":"Mykonos JMK","ID":"JMK"},{"ST":"Nantes NTE, France","DT":"Nantes NTE","ID":"NTE"},{"ST":"Naples NAP, Italy","DT":"Naples NAP","ID":"NAP"},{"ST":"Newcastle NCL, United Kingdom","DT":"Newcastle NCL","ID":"NCL"},{"ST":"Newquay (Cornwall) NQY, United Kingdom","DT":"Newquay (Cornwall) NQY","ID":"NQY"},{"ST":"Nice NCE, France","DT":"Nice NCE","ID":"NCE"},{"ST":"North West England (All Airports)","DT":"North West England (All Airports)","ID":"*NW"},{"ST":"Olbia (Sardinia) OLB, Italy","DT":"Olbia (Sardinia) OLB","ID":"OLB"},{"ST":"Palermo (Sicily) PMO, Italy","DT":"Palermo (Sicily) PMO","ID":"PMO"},{"ST":"Paris (All Airports)","DT":"Paris (All Airports)","ID":"*PA"},{"ST":"Paris Charles de Gaulle CDG, France","DT":"Paris Charles de Gaulle CDG","ID":"CDG"},{"ST":"Paris Orly ORY, France","DT":"Paris Orly ORY","ID":"ORY"},{"ST":"Pisa (Tuscany) PSA, Italy","DT":"Pisa (Tuscany) PSA","ID":"PSA"},{"ST":"Porto OPO, Portugal","DT":"Porto OPO","ID":"OPO"},{"ST":"Prague PRG, Czech Republic","DT":"Prague PRG","ID":"PRG"},{"ST":"Pristina PRN, Kosovo","DT":"Pristina PRN","ID":"PRN"},{"ST":"Reykjavik (Keflavik) KEF, Iceland","DT":"Reykjavik (Keflavik) KEF","ID":"KEF"},{"ST":"Rhodes RHO, Greece","DT":"Rhodes RHO","ID":"RHO"},{"ST":"Rome Fiumicino FCO, Italy","DT":"Rome Fiumicino FCO","ID":"FCO"},{"ST":"Salzburg SZG, Austria","DT":"Salzburg SZG","ID":"SZG"},{"ST":"Santiago de Compostela SCQ, Spain","DT":"Santiago de Compostela SCQ","ID":"SCQ"},{"ST":"Santorini JTR, Greece","DT":"Santorini JTR","ID":"JTR"},{"ST":"Sardinia (All Airports)","DT":"Sardinia (All Airports)","ID":"*SD"},{"ST":"Seville SVQ, Spain","DT":"Seville SVQ","ID":"SVQ"},{"ST":"Sharm El Sheikh SSH, Egypt","DT":"Sharm El Sheikh SSH","ID":"SSH"},{"ST":"Sicily (All Airports)","DT":"Sicily (All Airports)","ID":"*SY"},{"ST":"Sofia Intl SOF, Bulgaria","DT":"Sofia Intl SOF","ID":"SOF"},{"ST":"Split SPU, Croatia","DT":"Split SPU","ID":"SPU"},{"ST":"Stockholm (Arlanda) ARN, Sweden","DT":"Stockholm (Arlanda) ARN","ID":"ARN"},{"ST":"Strasbourg SXB, France","DT":"Strasbourg SXB","ID":"SXB"},{"ST":"Tallinn TLL, Estonia","DT":"Tallinn TLL","ID":"TLL"},{"ST":"Tangier TNG, Morocco","DT":"Tangier TNG","ID":"TNG"},{"ST":"Tel Aviv TLV, Israel","DT":"Tel Aviv TLV","ID":"TLV"},{"ST":"Tenerife South TFS, Spain","DT":"Tenerife South TFS","ID":"TFS"},{"ST":"Thessaloniki SKG, Greece","DT":"Thessaloniki SKG","ID":"SKG"},{"ST":"Toulouse TLS, France","DT":"Toulouse TLS","ID":"TLS"},{"ST":"Turin TRN, Italy","DT":"Turin TRN","ID":"TRN"},{"ST":"Valencia VLC, Spain","DT":"Valencia VLC","ID":"VLC"},{"ST":"Venice Marco Polo VCE, Italy","DT":"Venice Marco Polo VCE","ID":"VCE"},{"ST":"Verona VRN, Italy","DT":"Verona VRN","ID":"VRN"},{"ST":"Vienna VIE, Austria","DT":"Vienna VIE","ID":"VIE"},{"ST":"Zagreb ZAG, Croatia","DT":"Zagreb ZAG","ID":"ZAG"},{"ST":"Zante (Zakynthos) ZTH, Greece","DT":"Zante (Zakynthos) ZTH","ID":"ZTH"},{"ST":"Zurich ZRH, Switzerland","DT":"Zurich ZRH","ID":"ZRH"}]; 
+                $().ready(function() { 
+              $('#acOriginAirport').aclite(acOriginAirport_optionList, {
+               minChars: 2, 
+               width: 310,
+               matchContains: 'contains',
+         max:350,
+         resultValHolder:'#acOriginAirportValue',
+                 noMatchText: "No matches found",
+         formatSelectedValue:function(row) {
+         return row.ID;
+         },
+               formatMatch: function(row) {              
+               return row.ST;
+               },
+               formatSelected: function(row) {
+               return row.DT;
+               }
+               });
+                $('#acOriginAirportShowAll').unbind('click').click(function(){
+                    $('#acOriginAirport').showAll();
+                    return false;
+                    }); 
+              });
+              var noMatchText = "No matches found"; function SelectAll(id){document.getElementById(id).focus();document.getElementById(id).select()};</script><div style="clear:both;"></div>
+      </div>
+            <div class="gapLarge rightColumn">
+                <label  id="lbOutbound"  for="oDay" >Outbound<span class="hidden">day</span></label>
+          <select  name="oDay"  id="oDay" ><option  value="1" >1</option>
+<option  value="2" >2</option>
+<option  value="3" >3</option>
+<option  value="4" >4</option>
+<option  value="5" >5</option>
+<option  value="6" >6</option>
+<option  value="7" >7</option>
+<option  value="8" >8</option>
+<option  value="9" >9</option>
+<option  value="10" >10</option>
+<option  value="11" >11</option>
+<option  value="12" >12</option>
+<option  value="13" >13</option>
+<option  value="14" >14</option>
+<option  value="15" >15</option>
+<option  value="16" >16</option>
+<option  value="17" >17</option>
+<option  value="18"  selected="selected" >18</option>
+<option  value="19" >19</option>
+<option  value="20" >20</option>
+<option  value="21" >21</option>
+<option  value="22" >22</option>
+<option  value="23" >23</option>
+<option  value="24" >24</option>
+<option  value="25" >25</option>
+<option  value="26" >26</option>
+<option  value="27" >27</option>
+<option  value="28" >28</option>
+<option  value="29" >29</option>
+<option  value="30" >30</option>
+<option  value="31" >31</option>
+</select>
+                <label  for="oMonYear"  class="hidden" >Outbound month and year</label>
+          <select  name="oMonYear"  id="oMonYear" ><option  value="122013" >December 2013</option>
+<option  value="012014"  selected="selected" >January 2014</option>
+<option  value="022014" >February 2014</option>
+<option  value="032014" >March 2014</option>
+<option  value="042014" >April 2014</option>
+<option  value="052014" >May 2014</option>
+<option  value="062014" >June 2014</option>
+<option  value="072014" >July 2014</option>
+<option  value="082014" >August 2014</option>
+<option  value="092014" >September 2014</option>
+<option  value="102014" >October 2014</option>
+</select>
+          <input type="hidden"  name="oDate"  id="oDate"  value="18012014"  />
+            </div>
+        </div>
+        <div id="acDestinationAirportError0" class="errorMsg acDestinationAirportError acAddMoreFlightsDestinationAirportError" aria-hidden="true"></div>
+        <div id="acDestinationAirportErrorHidden0" role="alert" aria-live="assertive" class="readOutHidden">&nbsp;</div>
+         <div>         
+            <div id="acDestinationAirport_Container" class="searchControl leftColumn">
+                <label  for="acDestinationAirport"  class="label" >Going to *</label>
+                <input type="text"  name="acDestinationAirport"  id="acDestinationAirport"  aria-required="true"  aria-live="assertive"  aria-describedby="acDestinationAirportError0"  class="acl_input"  onclick="SelectAll('acDestinationAirport');" value="London Luton LTN"/><a title="Show all airports" class="sprite_AutoCompleteDropDownButton acl_showall" id="acDestinationAirportShowAll" role="button" href="#" ></a><input type="hidden" tabindex="-1" name="acDestinationAirportValue" id="acDestinationAirportValue"  value="LTN"/><script language="JavaScript" type="text/javascript">var acDestinationAirport_optionList = [{"ST":"Basel-Mulhouse-Freiburg BSL, Switzerland","DT":"Basel-Mulhouse-Freiburg BSL","ID":"BSL"},{"ST":"Belfast Intl BFS, United Kingdom","DT":"Belfast Intl BFS","ID":"BFS"},{"ST":"Berlin Schoenefeld SXF, Germany","DT":"Berlin Schoenefeld SXF","ID":"SXF"},{"ST":"Bristol BRS, United Kingdom","DT":"Bristol BRS","ID":"BRS"},{"ST":"Geneva GVA, Switzerland","DT":"Geneva GVA","ID":"GVA"},{"ST":"Liverpool LPL, United Kingdom","DT":"Liverpool LPL","ID":"LPL"},{"ST":"London Gatwick LGW, United Kingdom","DT":"London Gatwick LGW","ID":"LGW"},{"ST":"London Luton LTN, United Kingdom","DT":"London Luton LTN","ID":"LTN"},{"ST":"London Southend SEN, United Kingdom","DT":"London Southend SEN","ID":"SEN"},{"ST":"Lyon LYS, France","DT":"Lyon LYS","ID":"LYS"},{"ST":"Milan Malpensa MXP, Italy","DT":"Milan Malpensa MXP","ID":"MXP"},{"ST":"Newcastle NCL, United Kingdom","DT":"Newcastle NCL","ID":"NCL"},{"ST":"Nice NCE, France","DT":"Nice NCE","ID":"NCE"},{"ST":"Paris Charles de Gaulle CDG, France","DT":"Paris Charles de Gaulle CDG","ID":"CDG"}]; 
+                $().ready(function() { 
+              $('#acDestinationAirport').aclite(acDestinationAirport_optionList, {
+               minChars: 2, 
+               width: 310,
+               matchContains: 'contains',
+         max:350,
+         resultValHolder:'#acDestinationAirportValue',
+                 noMatchText: "No matches found",
+         formatSelectedValue:function(row) {
+         return row.ID;
+         },
+               formatMatch: function(row) {              
+               return row.ST;
+               },
+               formatSelected: function(row) {
+               return row.DT;
+               }
+               });
+                $('#acDestinationAirportShowAll').unbind('click').click(function(){
+                    $('#acDestinationAirport').showAll();
+                    return false;
+                    }); 
+              });
+              var noMatchText = "No matches found"; function SelectAll(id){document.getElementById(id).focus();document.getElementById(id).select()};</script><div style="clear:both;"></div>
+            </div>
+            <div class="gapLarge rightColumn">
+                <div>
+                    <label  for="chkIsReturn"  class="lblReturn" >Return</label>
+                    <div id="returnCheckBox" class="checkReturn"><input type="checkbox"  name="chkIsReturn"  id="chkIsReturn"  checked="checked"  /></div>
+                </div>
+                <div class="clear"></div>
+                <div>
+                    <label  for="rDay"  class="hidden" >Return day</label>
+            <select  name="rDay"  id="rDay" ><option  value="1" >1</option>
+<option  value="2" >2</option>
+<option  value="3" >3</option>
+<option  value="4"  selected="selected" >4</option>
+<option  value="5" >5</option>
+<option  value="6" >6</option>
+<option  value="7" >7</option>
+<option  value="8" >8</option>
+<option  value="9" >9</option>
+<option  value="10" >10</option>
+<option  value="11" >11</option>
+<option  value="12" >12</option>
+<option  value="13" >13</option>
+<option  value="14" >14</option>
+<option  value="15" >15</option>
+<option  value="16" >16</option>
+<option  value="17" >17</option>
+<option  value="18" >18</option>
+<option  value="19" >19</option>
+<option  value="20" >20</option>
+<option  value="21" >21</option>
+<option  value="22" >22</option>
+<option  value="23" >23</option>
+<option  value="24" >24</option>
+<option  value="25" >25</option>
+<option  value="26" >26</option>
+<option  value="27" >27</option>
+<option  value="28" >28</option>
+<option  value="29" >29</option>
+<option  value="30" >30</option>
+<option  value="31" >31</option>
+</select>
+                    <label  for="rMonYear"  class="hidden" >Return month and year</label>
+            <select  name="rMonYear"  id="rMonYear" ><option  value="122013" >December 2013</option>
+<option  value="012014" >January 2014</option>
+<option  value="022014" >February 2014</option>
+<option  value="032014" >March 2014</option>
+<option  value="042014"  selected="selected" >April 2014</option>
+<option  value="052014" >May 2014</option>
+<option  value="062014" >June 2014</option>
+<option  value="072014" >July 2014</option>
+<option  value="082014" >August 2014</option>
+<option  value="092014" >September 2014</option>
+<option  value="102014" >October 2014</option>
+</select>
+            <input type="hidden"  name="rDate"  id="rDate"  value="04042014"  />
+                </div>
+      </div>
+            <div style="clear: left"></div>
+            
+
+<div class="">
+  * Required Information
+</div>
+        </div>
+  </div>
+
+  <div  class="submit">
+        <p class='SearchFormBtn searchoff contain' ><a role="button"  name="btnChangeSearch"  id="ChangeSearchButton"  href='#' title='Search again'><span>Search again</span></a></p>
+  </div>
+            
+</div>
+
+
+<div id="NewSingleSearchPopUpOverlay" class="NewSingleSearchPopUpOverlay">
+    <div class="overlay-header">
+        <div class="close">
+            <a onclick="NewSingleSearchPopUpCloseButtonOnClickHandler();" tabindex="-1">close</a>
+        </div>
+    </div>
+    <div id="NewSingleSearchPopUpContentPanel">
+        <div class="overlay-column">
+            <div class="overlay-content">
+                <h2>Information about your flight price</h2>
+                <p>Your original search results included our per booking admin fee.  As you only added one flight, we’ve updated the first flight in your basket to include the full admin fee.</p>
+                <p class="orangeText">You still only pay €14.00 per booking</p>
+            </div>
+            <div class="overlay-button">
+                <p></p><p class='BrightOrangeBtn contain' ><a role="button"  name="OftPopupButtonButtonText652615"  id="OftPopupButtonButtonText652615"  href='javascript:NewSingleSearchPopUpCloseButtonOnClickHandler();' title='OK'><span>OK</span></a></p>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <input type="hidden" class="OftPopUpOverlayFareType"/>
+    <input type="hidden" id="OftPopUpOverlayDisplayIndex"/>
+    <input type="hidden" class="OftPopUpOverlayItemId"/>
+</div>
+<script type="text/javascript">
+    // document.ready is being triggered before the page loads after a call to '/RouteSelector.mvc/Show', when 'Modify' is clicked.
+    // Therefore the event registration has been moved here to the bottom of the document, so acDestinationAirport_optionList is
+    // updated with the correct market options in SelectRouteOnLoad() -> BindAirportDropDowns()
+    $(document).ready(function() {
+        SelectRouteOnLoad();
+        StateManagerInit();  // Now called here instead of in SelectFlights.aspx
+    });
+</script>
+
+<!-- LandB -->
+    
+       <div id="urgencyMessagesTranslations" style="display: none;">
+           <div id="MultiVisitors"><span>{0} people</span> currently looking at this route</div>
+           <div id="SingleVisitor"><span>1 person</span> currently looking at this route</div>
+           <div id="LastBooked1Min">Last booked <span>1 minute ago</span></div>
+           <div id="LastBookedMultiMin">Last booked <span>{0} minutes ago</span></div>
+           <div id="LastBooked1Hr">Last booked <span>1 hour ago</span></div>
+           <div id="LastBookedMultiHr">Last booked <span>{0} hours ago</span></div>
+           <div id="LastBookedYesterday">Last booked <span>yesterday</span></div>
+       </div>
+       <script type="text/javascript">
+           var lookAndBookParams = {"TimeStamp":"2013-12-24-18-56-34","Identifier":"3f321463-b3eb-4b99-b1d8-fdd3d14b863c","OriginAirport":"BCN","DestinationAirport":"LTN","Adults":1,"Children":0,"Infants":0,"FlexibleOnDates":false,"Language":"EN","Currency":"EUR","Source":1,"HashCode":"B202EFAC9A21370BF38DAEB7A8F046BF1ACB020CE7F4165F675159B3A3472E2E","DisplayResults":true} ;
+           lookAndBookParams.ServiceUrl = 'http://analytics.easyjet.com/';
+       </script>
+    
+<script type="text/javascript" language="javascript">
+    selectedTab = GetSelectedTabFromModelTab("Flights");
+    var SelectFlightsUrl = "/EN/FlightSelector.mvc/Show?tab=Flights";
+    var outboundFlightAfterReturnDateMessage = "Your outbound flight cannot take place after your selected return date";
+    var returnFlightBeforeOutboundDateMessage = "Your return flight cannot take place before your selected outbound date";
+    var invalidFlightOrderMessage = "Planning on flying back before you\'ve even left?! Please double-check the flights you\'ve selected.";
+    var updatingFlightsMessage = "One moment, we are updating the fare calendar";
+    var AjaxLoadingImageUrl = "/Content/Images/easyJetImages/ajax-loader-white.gif";
+    var PleaseWaitMessage = "Please wait";
+    var flightAddedToBasketText = "Flight successfully added to basket";
+    var dayOrMonthSelected = "{0} selected";
+    var outboundFlightDate;
+    var returnFlightDate;
+    var isModifyFlight;
+    var UserSwitchedBetweenFlexiAndStandardMode;
+    var UserSelected3DayView;                       
+    var selectedStandardOutboundFlightLI;
+    var selectedFlexiOutboundFlightLI;
+    var selectedStandardReturnFlightLI;
+    var selectedFlexiReturnFlightLI;
+    var confirmListItem;
+    var flightDirection; 
+    var FlexiFareFeatureEnabled = true;
+    var initialStateToSet = 1;
+        
+    $(document).ready(function(){
+        selectFlightsInitialState(false,
+                                  1);
+
+        SelectFlightsOnload();
+
+        if (FlexiFareFeatureEnabled) {                
+            ReHighlightSelectedFlights(true);
+      }
+        // Update t&cs everytime the basket is updated
+       $("#basketPanel").bind("basketLoaded", function(e) { ShowHideFlightFee($("#radioFlexi").attr("checked")); });
+       hideYearViewForFlexi();
+    });
+    
+    
+    
+</script>
+<input type="hidden" id="InitialState" value="" />          
+
+<div id="selectFlightsBody">
+    <input id="flightSearchSession" type="hidden" value="aa341dd4-f20b-41e7-a39e-1c09f1eca810" />
+    <div class="calendarTabs">
+        <a name="FlightTimetable" id="FlightTimetable" class="skipTarget " tabindex="-1" ></a>
+        <ul class="tab-headers contain">
+            <li class="contain">
+                <a id="SelectFlightsTab" href="#tab1" class='active tabLink'>
+                    <span>
+                        3 day view
+                        <input type="hidden"  name="SelectFlights"  id="SelectFlights"  />
+                    </span>
+                    <span class="hidden" id="selectedTabReadout">currently selected</span>
+                </a>
+            </li>
+            <li class="contain">
+                <a id="SelectLowestFlightsTab" href="#tab2" class=' tabLink'>
+                    <span>
+                        3 week view
+                        <input type="hidden"  name="SelectLowestFlights"  id="SelectLowestFlights"  />
+                    </span>
+                    
+                </a>
+            </li>
+            <li class="contain">
+                <a id="SelectLowestFlightsByMonthTab" href="#tab3" class=' tabLink'>
+                    <span>
+                        Year view
+                        <input type="hidden"  name="SelectLowestFlightsByMonth"  id="SelectLowestFlightsByMonth"  />
+                    </span>
+                    
+                </a>
+            </li>
+        </ul>
+
+
+        <div id="OftCompliantInformationMessage" ><div>The prices displayed are our lowest available fares using the free payment method</div></div>
+
+
+        
+        <div class="tab-content" id="commonTabSectionContent">&nbsp;
+                 <a href="#" tabindex="-1"><img id="flexiBanner" alt="FLEXI banner" src="/common/img/flexiBanneren.jpg" /> </a> 
+                <div class="flexiRadioPanel">
+                    <div class="flexiRadioFLEXI"><label for="radioFlexi"><input type="radio"  name="FareGroup"  id="radioFlexi"  value="rdFlexi"  />&nbsp;Show me <span class="FlexiWord">FLEXI</span> fares</label></div>
+                    <div class="flexiRadioStandard"><label for="radioStandard"><input type="radio"  name="FareGroup"  id="radioStandard"  value="rdStandard"  checked="checked"  />&nbsp;Show me <span class="standardFare">Standard</span> fares</label></div>                    
+                </div>
+                
+                
+
+<div class="flexiTellMeMorePanel">
+    <div class="flexiSlideBox">
+        <div class="title">
+            <a href="#" id="flexiFareTellMeMoreLink">
+                <img src="/Content/Images/easyJetImages/arrow_down.gif" alt="show" width="7" height="5" />
+                Tell me more about <span id="FlexiWord">FLEXI</span> </a>
+        </div>
+        <div id="flexiFareTellMeMoreContent" class="content" style="display: none;">
+                                 
+            <p>
+        <span class="FlexiWord">
+            FLEXI
+        </span> 
+            includes:</p>
+  <div class="flexColumns">
+    <ul class="flexiIconUL">
+    <li>
+            <div class="flexWrap">
+                <span class="flexHeader">
+                    Unlimited date changes
+                </span>
+                <span class="flexbody">
+                   Unlimited changes to your flights within a 4 week period from 1 week before to 3 weeks after the original travel date.
+                </span>
+            </div>
+        </li>
+    <li>
+            <div class="flexWrap">
+                <span class="flexHeader">
+                    Seat Selection
+                </span>
+                <span class="flexbody">
+                   An Up front seat for free or choose Extra Legroom at a discounted rate.
+                </span>
+            </div>
+        </li>
+    <li>
+            <div class="flexWrap">
+                <span class="flexHeader">
+                    Speedy Boarding
+                </span>
+                <span class="flexbody">
+                    Be amongst the first to board the aircraft.
+                </span>
+            </div>
+        </li> 
+    <li>
+            <div class="flexWrap">
+                <span class="flexHeader">
+                    Fast Track security
+                </span>
+                <span class="flexbody">
+                    Available at selected airports.
+                </span>
+            </div>
+        </li> 
+    </ul>
+    <ul class="flexiIconUL">
+    <li>
+            <div class="flexWrap">
+                <span class="flexHeader">
+                    Maximum Cabin bag size  
+                </span>
+                <span class="flexbody">
+                    ONE cabin bag per <span class="FlexiWordNormal">FLEXI</span> passenger, no bigger than 56 x 45 x 25cm.
+                </span>
+            </div>
+        </li>
+    <li>
+            <div class="flexWrap">
+                <span class="flexHeader">
+                    Hold Luggage
+                </span>
+                <span class="flexbody">
+                    1 piece of free hold luggage per passenger (20kg max).
+                </span>
+            </div>
+        </li>
+    <li>
+            <div class="flexWrap">
+                <span class="flexHeader">
+                    Dedicated bag drop
+                </span>
+                <span class="flexbody">
+                    Beat the queues using our dedicated bag drop desks.
+                </span>
+            </div>
+        </li>
+    <li>
+            <div class="flexWrap">
+                <span class="flexHeader">
+                    No extra payment fees
+                </span>
+                <span class="flexbody">
+                    No Admin or credit card charges.
+                </span>
+            </div>
+        </li>
+    </ul>
+  </div>
+    <p>
+        Flexi fares are available to book 120 days from the current date.&nbsp;&nbsp;All
+        other standard <a href="/EN/terms_and_conditions.html" id="termsLink" target="_blank">terms
+            and conditions</a> apply.</p>  
+                        
+        </div>
+    </div>
+    <!-- }}} SlideBox -->
+</div>
+                    <div style="clear:both;"></div>  
+                    <img src="/common/img/WrappedAdminFeeBanner-en.jpg" alt="All fares include the flight admin fee – what you see is what you pay" class="centreImage" />
+                    
+                
+                <div style="clear:both;"></div>  
+        </div>
+        <div style="clear:both;"></div> 
+        
+        <a name="selectFlightsDetails"></a>
+        <div id="selectFlightsDetails" class="tab-content">
+            
+
+<input type="hidden" name="OftEnabled" id="OftEnabled" value="false" />       
+
+<div class="tab-content-ReturnJourney contain">
+<script type="text/javascript" language="javascript">
+    var outboundFlightArrivalTime;
+    currentTab = 'Flights';
+    daysToChange = 1;
+    
+    virtualPageViewUrl = '/EN/step1search?q=f:BCN-t:LTN-o:20140118-r:20140404-a:1-c:0-i:0&cat=SearchPod|/en/';
+    if(virtualPageViewUrl != '') {
+        _gaq.push(['_trackPageview', virtualPageViewUrl]);
+    }
+    
+    
+    
+   
+</script>
+
+
+<script type="text/javascript">
+    // Used bin SelectFlightsOnLoad() for sending into: UrgencyMessages(backgroundColour);
+    var backgroundColour = '#CE5B00';
+    
+    $(document).ready(function() {        
+        UrgencyMessages(backgroundColour);
+        HandleOft(false);
+    });
+    
+</script>
+    
+    <a name="OutboundFlightDetails"></a>
+    <div id='OutboundFlightDetails' class='journey3Day first '>
+        
+        <div id="OutboundJourney"><h2 class="flightHeader outbound">Outbound <span>journey</span></h2></div>
+        
+        
+        
+        <h3>Barcelona <span>to London Luton</span></h3>
+        <div data-route='BCN_LTN' class="urgencyMessage BCNLTN"></div>
+        <div class="calendarView contain">
+            <div class="prev">
+                <a class='OutboundPrevDay'
+                    href="javascript:void(0);" id="BCN_LTNOutboundPrevBtn">
+                    <img  name="PrevDay"  id="OutboundPrevDay"  alt="Previous day"  height="14"  width="14"  src="/Content/Images/easyJetImages/btn_prev.gif"  />
+                </a>
+            </div>
+            <div class="OutboundDaySliderContainer " >
+                
+                <div class="OutboundDaySlider" data-SelectedDate='2014-01-18' data-SelectedDateM1='2014-01-17'>
+                <div class="day">
+                    <span>Thu 16 Jan</span>
+                    <ul>
+                    
+<li >
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>
+<li >
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>
+                    </ul>
+                </div>
+                
+                
+                <div class="day" >
+                    <span id="BCN_LTNOutboundDay0" class="dayDate  dayDate0">
+                        Fri 17 Jan
+                    </span>
+                    <ul class="leftRow">
+                                 
+ 
+  <li id='ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7f99b17bdaf5e640bfeaa5aceaa65fa7cdd522fb6cdd3bc698b65d652d7dace7df726af17f45d79fa2a6fce661f3d5aaecb72f4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988d39313e0d4fd527b7b4263cfcb6a99f94dba1defd377459d4f5b26d02efe6aa6e8df6241ff6baae5d9f249d6e427ebbace97d36b6a793006b1461f9dfea275b15ae4cb16d03e1d7df42cabdd08e2efdebb3f7ef8505abeb95e11aaf7e80f9e2f7c0438f71f3ed8b9f7f0e18ef9fcc57a31c96b1ad3dedea7fb349ccff3655e67e57390eb59b628caebd7ab6c5934f31ef61e0d6fff92a0cd2f019b7b070f3f7d789fc676d67c79de3ecbf3e3d5aa2c72faa6add7b97efc9a6858118ae759d9f067afab72f6e5baf53f69b3e5ecc9b5fd641893b3e6f8322bca6c52e6ae75411dee028de7d5943850992c6bf33705cff7ef7b177f6ced12ba0f3fbd27ccfc09feb9f3fbdefd48dfb27c80a69d77ee1fec75df11ba7f797e5c96f4769bcf48a0da86f9c47c25046e98584a9dcdb34fed88f78a19b1cc2d26eda6a6de540d348dd112c3289617a74b7c3ae3f1f0c83067c47dc48faf57f9b4b815b378c8defe250f6de28af3f33775769997aff28ba269f31a28194cc133593d83647cb92c1df3bcc9dedd44e831e4f34dd566e52d8472f70109e5a617be5bb4f31342ad684f081f51551f3ddabb3fdee7d7bea23f09d017a46bb38bfc655d4c731e5ef8b9129ebff9fda7daf949b5bca42e48037d91d56fd72b8f3ea2177fffd910fdf4fbf33ebaf6bb2ac6941f3d7a405fb53d1adab7da012ad088f79950bfe4ff090000ffff' class='selectable save'>
+                           
+    <input class="flightDate" type="hidden" value='new Date(1389958200000)' />
+    <input class="flightArrivalDate" type="hidden" value='new Date(1389963000000)' />
+                           
+    <a id="Flight3896956" href="#" charge-debit="€24<div>.</div><span>99</span>" charge-credit="€25<div>.</div><span>49</span>" charge-credit-full="25.4900" charge-debit-full="24.9900" class="standard oftcctoggle" 
+       title="">
+                               
+        <span  class="title" >SAVE</span>
+
+        <span class="priceSmaller targetPrice formatedPrice cellPrice">
+            €24<div>.</div><span>99</span>
+        </span>
+        <span class="time">
+            <span class="hidden">
+                Departure
+                17/01/2014 11:30
+            </span>
+            <span  aria-hidden="true" >Dep </span>
+            <span aria-hidden="true">11:30</span>
+        </span> 
+        <span class="time">
+            <span class="hidden">
+                Arrival
+                17/01/2014 12:50
+            </span>
+            <span  aria-hidden="true" >Arr </span>
+            <span aria-hidden="true">12:50</span>
+        </span>
+        
+    </a>      
+
+</li>            
+
+
+<li id="DayLoading_ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7f99b17bdaf5e640bfeaa5aceaa65fa7cdd522fb6cdd3bc698b65d652d7dace7df726af17f45d79fa2a6fce661f3d5aaecb72f4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988d39313e0d4fd527b7b4263cfcb6a99f94dba1defd377459d4f5b26d02efe6aa6e8df6241ff6baae5d9f249d6e427ebbace97d36b6a793006b1461f9dfea275b15ae4cb16d03e1d7df42cabdd08e2efdebb3f7ef8505abeb95e11aaf7e80f9e2f7c0438f71f3ed8b9f7f0e18ef9fcc57a31c96b1ad3dedea7fb349ccff3655e67e57390eb59b628caebd7ab6c5934f31ef61e0d6fff92a0cd2f019b7b070f3f7d789fc676d67c79de3ecbf3e3d5aa2c72faa6add7b97efc9a6858118ae759d9f067afab72f6e5baf53f69b3e5ecc9b5fd641893b3e6f8322bca6c52e6ae75411dee028de7d5943850992c6bf33705cff7ef7b177f6ced12ba0f3fbd27ccfc09feb9f3fbdefd48dfb27c80a69d77ee1fec75df11ba7f797e5c96f4769bcf48a0da86f9c47c25046e98584a9dcdb34fed88f78a19b1cc2d26eda6a6de540d348dd112c3289617a74b7c3ae3f1f0c83067c47dc48faf57f9b4b815b378c8defe250f6de28af3f33775769997aff28ba269f31a28194cc133593d83647cb92c1df3bcc9dedd44e831e4f34dd566e52d8472f70109e5a617be5bb4f31342ad684f081f51551f3ddabb3fdee7d7bea23f09d017a46bb38bfc655d4c731e5ef8b9129ebff9fda7daf949b5bca42e48037d91d56fd72b8f3ea2177fffd910fdf4fbf33ebaf6bb2ac6941f3d7a405fb53d1adab7da012ad088f79950bfe4ff090000ffff" style="display:none">
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>             
+ 
+  <li id='ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7f99b17bdaf5e640bfeaa5aceaa65fa7cdd522fb6cdd3bc698b65d652d7dace7df726af17f45d79fa2a6fce661f3d5aaecb72f4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988d39313e0d4fd527b7b4263cfcb6a99f94dba1defd377459d4f5b26d02efe6aa6e8df6241ff6baae5d9f249d6e427ebbace97d36b6a793006b1461f9dfea275b15ae4cb16d03e1d7df42cabdd08e2efdebb377ef8505abeb95e11aaf7e80f9e2f7c0438f71f3ed87978ffc1aef9fcc57a31c96b1ad3dedea707349ccff3655e67e57390eb59b628caebd7ab6c5934f31ef61e0d6fff92a0cd2f019b7b0784cebd3dfaa3f9f2bc7d96e7c7ab5559e4f44d5baf73fdf835d1b02214cfb3b2e1cf5e57e5eccb75eb7fd266cbd9936bfbc9302667cdf1655694d9a4cc5deb823adcbd4f247e5e4d890395c9b2367f53f07cffbe77f1c7d62ea1fbf0e1a79f32337f827feefcbe773fd2b72c1fa069f79ddd83ee3b42f72fcf8fcb92de6ef3190954db309f98af84c00d134ba9b379f6a91df15e312396b9c5a4ddd4d49baa81a6315a6218c5f2e274894f673c1e1e19e60cdc477faef269712b66f190bdfd4b1edac415e7e76feaec322f5fe51745d3e6355032988267b27a06c9f872593ae67993bdbb89d063c8e79baacdca5b08e5ee7d12ca4d2f7cb768e727845ad19e103ea2aa3e7ab4776fbc7f1faf7d457f12a02f48d76617f9cbba98d2b7bb9f76bf50cab3ccfffe53edfda45a5e521fa482bec8eab7eb954720518cbfff6c8880fafd791f5ffb5d15e3ca8f1e3da0afda1e11ed5bed001968c87b4ca95ff2ff040000ffff' class='selectable save'>
+                           
+    <input class="flightDate" type="hidden" value='new Date(1389991800000)' />
+    <input class="flightArrivalDate" type="hidden" value='new Date(1389996600000)' />
+                           
+    <a id="Flight3897032" href="#" charge-debit="€22<div>.</div><span>99</span>" charge-credit="€23<div>.</div><span>45</span>" charge-credit-full="23.4500" charge-debit-full="22.9900" class="standard oftcctoggle ShowUrgencyMessage urgencyMessagePriority_3" 
+       title="Hurry! Only 3 seats left at this price">
+                               
+        <span  class="title" >SAVE</span>
+
+        <span class="priceSmaller targetPrice formatedPrice cellPrice">
+            €22<div>.</div><span>99</span>
+        </span>
+        <span class="time">
+            <span class="hidden">
+                Departure
+                17/01/2014 20:50
+            </span>
+            <span  aria-hidden="true" >Dep </span>
+            <span aria-hidden="true">20:50</span>
+        </span> 
+        <span class="time">
+            <span class="hidden">
+                Arrival
+                17/01/2014 22:10
+            </span>
+            <span  aria-hidden="true" >Arr </span>
+            <span aria-hidden="true">22:10</span>
+        </span>
+        
+            <span class="accessibility_hidden">Hurry! Only 3 seats left at this price</span>
+        
+    </a>      
+
+</li>            
+
+
+<li id="DayLoading_ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7f99b17bdaf5e640bfeaa5aceaa65fa7cdd522fb6cdd3bc698b65d652d7dace7df726af17f45d79fa2a6fce661f3d5aaecb72f4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988d39313e0d4fd527b7b4263cfcb6a99f94dba1defd377459d4f5b26d02efe6aa6e8df6241ff6baae5d9f249d6e427ebbace97d36b6a793006b1461f9dfea275b15ae4cb16d03e1d7df42cabdd08e2efdebb377ef8505abeb95e11aaf7e80f9e2f7c0438f71f3ed87978ffc1aef9fcc57a31c96b1ad3dedea707349ccff3655e67e57390eb59b628caebd7ab6c5934f31ef61e0d6fff92a0cd2f019b7b0784cebd3dfaa3f9f2bc7d96e7c7ab5559e4f44d5baf73fdf835d1b02214cfb3b2e1cf5e57e5eccb75eb7fd266cbd9936bfbc9302667cdf1655694d9a4cc5deb823adcbd4f247e5e4d890395c9b2367f53f07cffbe77f1c7d62ea1fbf0e1a79f32337f827feefcbe773fd2b72c1fa069f79ddd83ee3b42f72fcf8fcb92de6ef3190954db309f98af84c00d134ba9b379f6a91df15e312396b9c5a4ddd4d49baa81a6315a6218c5f2e274894f673c1e1e19e60cdc477faef269712b66f190bdfd4b1edac415e7e76feaec322f5fe51745d3e6355032988267b27a06c9f872593ae67993bdbb89d063c8e79baacdca5b08e5ee7d12ca4d2f7cb768e727845ad19e103ea2aa3e7ab4776fbc7f1faf7d457f12a02f48d76617f9cbba98d2b7bb9f76bf50cab3ccfffe53edfda45a5e521fa482bec8eab7eb954720518cbfff6c8880fafd791f5ffb5d15e3ca8f1e3da0afda1e11ed5bed001968c87b4ca95ff2ff040000ffff" style="display:none">
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>
+                    </ul>
+                </div>
+                
+                <div class="day" >
+                    <span id="BCN_LTNOutboundDay1" class="dayDate selectedDate dayDate1">
+                        Sat 18 Jan
+                    </span>
+                    <ul class="middleRow">
+                                 
+ 
+  <li id='ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7f99b17bdaf5e640bfeaa5aceaa65fa7cdd522fb6cdd3bc698b65d652d7dace7df726af17f45d79fa2a6fce661f3d5aaecb72f4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988d39313e0d4fd527b7b4263cfcb6a99f94dba1defd377459d4f5b26d02efe6aa6e8df6241ff6baae5d9f249d6e427ebbace97d36b6a793006b1461f9dfea275b15ae4cb16d03e1d7df42cabdd08e2efdedb1f3f7c282ddf5caf08d57bf407cf173e029cfb0f1fec7c7affdea7e6f317ebc524af694c7b7b9feed3703ecf97799d95cf41ae67d9a228af5fafb265d1cc7bd87b34bcfd4b8236bf046cee1d3c3cd8dd258ccf9a2fcfdb67797ebc5a95454edfb4f53ad78f5f130d2b42f13c2b1bfeec7555cebe5cb7fe276db69c3db9b69f0c6372d61c5f6645994dcadcb52ea8c3ddfb4493e7d5943850992c6bf33705cff7ef7b177f6cedde7bb8b3b3ffe93e33f327f8e7ceef7bf7237dcbf2019a76dfd9fdb4fb8ed0fdcbf3e3b2a4b7db7c4602d536cc27e62b2170c3c452ea6c9e7d6a47bc57cc88656e31693735f5a66aa0698c961846b1bc385de2d3198f87478639fbe8d1de03fa73954f8b5b318b87eced5ff2d026ae383f7f53679779f92abf289a36af8192c1143c93d53348c697cbd231cf9becdd4d841e433edf546d56de4228773f25a1dcf4c2778b767e42a815ed09e123aa8a68b53fde7f80d7bea23f09d017a46bb38bfc655d4c731e5ef8b9129ebff9fda7daf949b5bca42e48037d91d56fd72b8f3ea2177fffd910fdf4fbf33ebaf6bb2ac6941f3da239fefddb1e0ded5bed001568c4f79850bfe4ff090000ffff' class='selectable save'>
+                           
+    <input class="flightDate" type="hidden" value='new Date(1390041600000)' />
+    <input class="flightArrivalDate" type="hidden" value='new Date(1390046400000)' />
+                           
+    <a id="Flight3898119" href="#" charge-debit="€23<div>.</div><span>99</span>" charge-credit="€24<div>.</div><span>47</span>" charge-credit-full="24.4700" charge-debit-full="23.9900" class="standard oftcctoggle" 
+       title="">
+                               
+        <span  class="title" >SAVE</span>
+
+        <span class="priceSmaller targetPrice formatedPrice cellPrice">
+            €23<div>.</div><span>99</span>
+        </span>
+        <span class="time">
+            <span class="hidden">
+                Departure
+                18/01/2014 10:40
+            </span>
+            <span  aria-hidden="true" >Dep </span>
+            <span aria-hidden="true">10:40</span>
+        </span> 
+        <span class="time">
+            <span class="hidden">
+                Arrival
+                18/01/2014 12:00
+            </span>
+            <span  aria-hidden="true" >Arr </span>
+            <span aria-hidden="true">12:00</span>
+        </span>
+        
+    </a>      
+
+</li>            
+
+
+<li id="DayLoading_ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7f99b17bdaf5e640bfeaa5aceaa65fa7cdd522fb6cdd3bc698b65d652d7dace7df726af17f45d79fa2a6fce661f3d5aaecb72f4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988d39313e0d4fd527b7b4263cfcb6a99f94dba1defd377459d4f5b26d02efe6aa6e8df6241ff6baae5d9f249d6e427ebbace97d36b6a793006b1461f9dfea275b15ae4cb16d03e1d7df42cabdd08e2efdedb1f3f7c282ddf5caf08d57bf407cf173e029cfb0f1fec7c7affdea7e6f317ebc524af694c7b7b9feed3703ecf97799d95cf41ae67d9a228af5fafb265d1cc7bd87b34bcfd4b8236bf046cee1d3c3cd8dd258ccf9a2fcfdb67797ebc5a95454edfb4f53ad78f5f130d2b42f13c2b1bfeec7555cebe5cb7fe276db69c3db9b69f0c6372d61c5f6645994dcadcb52ea8c3ddfb4493e7d5943850992c6bf33705cff7ef7b177f6cedde7bb8b3b3ffe93e33f327f8e7ceef7bf7237dcbf2019a76dfd9fdb4fb8ed0fdcbf3e3b2a4b7db7c4602d536cc27e62b2170c3c452ea6c9e7d6a47bc57cc88656e31693735f5a66aa0698c961846b1bc385de2d3198f87478639fbe8d1de03fa73954f8b5b318b87eced5ff2d026ae383f7f53679779f92abf289a36af8192c1143c93d53348c697cbd231cf9becdd4d841e433edf546d56de4228773f25a1dcf4c2778b767e42a815ed09e123aa8a68b53fde7f80d7bea23f09d017a46bb38bfc655d4c731e5ef8b9129ebff9fda7daf949b5bca42e48037d91d56fd72b8f3ea2177fffd910fdf4fbf33ebaf6bb2ac6941f3da239fefddb1e0ded5bed001568c4f79850bfe4ff090000ffff" style="display:none">
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>
+                    </ul>
+                </div>
+                
+                <div class="day" >
+                    <span id="BCN_LTNOutboundDay2" class="dayDate  dayDate2">
+                        Sun 19 Jan
+                    </span>
+                    <ul class="">
+                                 
+ 
+  <li id='ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7f99b17bdaf5e640bfeaa5aceaa65fa7cdd522fb6cdd3bc698b65d652d7dace7df726af17f45d79fa2a6fce661f3d5aaecb72f4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988d39313e0d4fd527b7b4263cfcb6a99f94dba1defd377459d4f5b26d02efe6aa6e8df6241ff6baae5d9f249d6e427ebbace97d36b6a793006b1461f9dfea275b15ae4cb16d03e1d7df42cabdd08e2ef1e1c8c1f3e94966fae57390f50e60b1f01cefd87f7f63efdf4befdfcc57a31c96b1ad3dedea707349ccff3655e67e57390eb59b628caebd7ab6c5934f31ef61e0d6fff92a0cd2f019b7b070f1fecdcbb477f345f9eb7cff2fc78b52a8b9cbe69eb75ae1fbf261a5684e2795636fcd9ebaa9c7db96efd4fda6c397b726d3f19c6e4ac39becc8a329b94b96b5d5087bbf789c4cfab2971a03259d6e66f0a9eefdff72efed8dabdf77067f7d387fbcccc9fe09f3bbfefdd8ff42dcb0768da7d67ffd3ee3b42f72fcf8fcb92de6ef3190954db309f98af84c00d134ba9b379f6a91df15e312396b9c5a4ddd4d49baa81a6315a6218c5f2e274894f673c1e1e19e68cfeda39a0bf57f9b4b815b778d8defe250f6f628bf3f33775769997aff28ba269f31a381954c134593d83687cb92c1df7bcc9dedd44e93104f44dd566e52da4f2c10e49e5a617be5bb4f31342ad684f081fd155f4dac3f1fdfb78ed2bfa93007d41ca36bbc85fd6c554243bfc5c29cfdffcfe53edfca45a5e5217a482bec8eab7eb95471f518cbfff6c887efafd791f5dfb5d15e34a429cbe6a7b34b46fb50354a0171f30a17ec9ff130000ffff' class='selectable standard'>
+                           
+    <input class="flightDate" type="hidden" value='new Date(1390164600000)' />
+    <input class="flightArrivalDate" type="hidden" value='new Date(1390169400000)' />
+                           
+    <a id="Flight3897033" href="#" charge-debit="€77<div>.</div><span>99</span>" charge-credit="€79<div>.</div><span>55</span>" charge-credit-full="79.5500" charge-debit-full="77.9900" class="standard oftcctoggle" 
+       title="">
+                               
+        
+
+        <span class="priceSmaller targetPrice formatedPrice cellPrice">
+            €77<div>.</div><span>99</span>
+        </span>
+        <span class="time">
+            <span class="hidden">
+                Departure
+                19/01/2014 20:50
+            </span>
+            <span  aria-hidden="true" >Dep </span>
+            <span aria-hidden="true">20:50</span>
+        </span> 
+        <span class="time">
+            <span class="hidden">
+                Arrival
+                19/01/2014 22:10
+            </span>
+            <span  aria-hidden="true" >Arr </span>
+            <span aria-hidden="true">22:10</span>
+        </span>
+        
+    </a>      
+
+</li>            
+
+
+<li id="DayLoading_ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7f99b17bdaf5e640bfeaa5aceaa65fa7cdd522fb6cdd3bc698b65d652d7dace7df726af17f45d79fa2a6fce661f3d5aaecb72f4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988d39313e0d4fd527b7b4263cfcb6a99f94dba1defd377459d4f5b26d02efe6aa6e8df6241ff6baae5d9f249d6e427ebbace97d36b6a793006b1461f9dfea275b15ae4cb16d03e1d7df42cabdd08e2ef1e1c8c1f3e94966fae57390f50e60b1f01cefd87f7f63efdf4befdfcc57a31c96b1ad3dedea707349ccff3655e67e57390eb59b628caebd7ab6c5934f31ef61e0d6fff92a0cd2f019b7b070f1fecdcbb477f345f9eb7cff2fc78b52a8b9cbe69eb75ae1fbf261a5684e2795636fcd9ebaa9c7db96efd4fda6c397b726d3f19c6e4ac39becc8a329b94b96b5d5087bbf789c4cfab2971a03259d6e66f0a9eefdff72efed8dabdf77067f7d387fbcccc9fe09f3bbfefdd8ff42dcb0768da7d67ffd3ee3b42f72fcf8fcb92de6ef3190954db309f98af84c00d134ba9b379f6a91df15e312396b9c5a4ddd4d49baa81a6315a6218c5f2e274894f673c1e1e19e68cfeda39a0bf57f9b4b815b778d8defe250f6f628bf3f33775769997aff28ba269f31a381954c134593d83687cb92c1df7bcc9dedd44e93104f44dd566e52da4f2c10e49e5a617be5bb4f31342ad684f081fd155f4dac3f1fdfb78ed2bfa93007d41ca36bbc85fd6c554243bfc5c29cfdffcfe53edfca45a5e5217a482bec8eab7eb95471f518cbfff6c887efafd791f5dfb5d15e34a429cbe6a7b34b46fb50354a0171f30a17ec9ff130000ffff" style="display:none">
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>
+                    </ul>
+                </div>
+                
+                
+                <div class="day">
+                 <span>Mon 20 Jan</span>
+                 <ul>
+                 
+<li >
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>
+<li >
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>
+                 </ul>
+                </div>
+                </div>
+            </div>
+            <div class="next">
+                <a class='OutboundNextDay'
+                    href="javascript:void(0);" id="BCN_LTNOutboundNextBtn">
+                    <img  name="NextDay"  id="OutboundNextDay"  alt="Next day"  height="14"  width="14"  src="/Content/Images/easyJetImages/btn_next.gif"  />
+                </a>
+            </div>
+        </div>
+
+        
+    </div>
+    
+    <a name="ReturnFlightDetails"></a>
+    <div id='ReturnFlightDetails' class='journey3Day contain '>
+        
+        <div id="ReturnJourney"><h2 class="flightHeader return">Return <span>journey</span></h2></div>
+        
+        
+        
+        <h3>London Luton <span>to Barcelona</span></h3>
+        <div data-route='BCN_LTN' class="urgencyMessage LTNBCN"></div>
+        <div class="calendarView contain">
+            <div class="prev">
+                <a class='ReturnPrevDay'
+                    href="javascript:void(0);" id="BCN_LTNReturnPrevBtn">
+                    <img  name="PrevDay"  id="ReturnPrevDay"  alt="Previous day"  height="14"  width="14"  src="/Content/Images/easyJetImages/btn_prev.gif"  />
+                </a>
+            </div>
+            <div class="ReturnDaySliderContainer " >
+                
+                <div class="ReturnDaySlider" data-SelectedDate='2014-04-04' data-SelectedDateM1='2014-04-03'>
+                <div class="day">
+                    <span>Wed 02 Apr</span>
+                    <ul>
+                    
+<li >
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>
+<li >
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>
+                    </ul>
+                </div>
+                
+                
+                <div class="day" >
+                    <span id="BCN_LTNReturnDay0" class="dayDate  dayDate0">
+                        Thu 03 Apr
+                    </span>
+                    <ul class="leftRow">
+                                 
+ 
+  <li id='ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7c9c98bde572fb2057f45bde465b5cc5c83a779d316cbaca57eb591fbee4d5e2fe8bbf2f455de9ccd3e7a746ff4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988cdf337c0a6fba576f5bc5aceaa65fa7cddd2a8bd56dd8e97ebb2a4af8b3a9fb64ca03dfcd54c8185c585fed754cbb3e593acc94fd6759d2fa7d71f3dda3d188358a38f4e7fd1ba582df2650b809f8e3e7a96d56e1cf177efdf1b3f7c282ddf5caf721ea6cc173e6238bb0f3fbd77ef53fbf98bf56292d734b2bdbd4fefd1883ecf97799d95cf41b467d9a228af5fafb265d1cc7bd87b94bcfd4b8236bf046cf6771e3c3cd8238ccf9a2fcfdb67797ebc5a95454edfb4f53ad78f5f130d2b42f13c2b1bfeec7555cebe5cb7fe276db69c3db9b69f0c6372d61c5f6645994dcadcb52ea8c3ddfb44e2e7d5943850f92c6bf33705cffaef7b177f6cedde7bf8e9fdbd87bbcccc9fecd0cf3bbfefdd8ff42dcb0a68da7967f760a7fb8ed0fdcbf3e3b2a4b7db7c4602d5368486fb4a08dc30b1943a9b679fda11fb153362995b4cda4d4dbda91a681aa32586512c2f4e97f874c6e3e19161ce480a68aa5faff269712b66f190bdfd4b1edac415e7e76feaec322f5fe51745d3e6355032988267b27a06c9f872593ae67993bdbb4944ef8fef9340bfa9daacbc8d54ee8eefef42a2875ef86ed1ce4f08b7a23d21844463d16b0fc79f1ee0b5afe84f02f40529dbec227f59175391ecf073a53c7ff3fb4fb5f3936a79495d900afa22abdfae571e814445fdfeb32102eaf7e77d74ed77558c2b3f7af480be6a7b44b46fb50354a0111f30a17ec9ff130000ffff' class='selectable standard'>
+                           
+    <input class="flightDate" type="hidden" value='new Date(1396521600000)' />
+    <input class="flightArrivalDate" type="hidden" value='new Date(1396532700000)' />
+                           
+    <a id="Flight4079829" href="#" charge-debit="€58<div>.</div><span>51</span>" charge-credit="€59<div>.</div><span>68</span>" charge-credit-full="59.6800" charge-debit-full="58.5100" class="standard oftcctoggle" 
+       title="">
+                               
+        
+
+        <span class="priceSmaller targetPrice formatedPrice cellPrice">
+            €58<div>.</div><span>51</span>
+        </span>
+        <span class="time">
+            <span class="hidden">
+                Departure
+                03/04/2014 10:40
+            </span>
+            <span  aria-hidden="true" >Dep </span>
+            <span aria-hidden="true">10:40</span>
+        </span> 
+        <span class="time">
+            <span class="hidden">
+                Arrival
+                03/04/2014 13:45
+            </span>
+            <span  aria-hidden="true" >Arr </span>
+            <span aria-hidden="true">13:45</span>
+        </span>
+        
+    </a>      
+
+</li>            
+
+
+<li id="DayLoading_ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7c9c98bde572fb2057f45bde465b5cc5c83a779d316cbaca57eb591fbee4d5e2fe8bbf2f455de9ccd3e7a746ff4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988cdf337c0a6fba576f5bc5aceaa65fa7cddd2a8bd56dd8e97ebb2a4af8b3a9fb64ca03dfcd54c8185c585fed754cbb3e593acc94fd6759d2fa7d71f3dda3d188358a38f4e7fd1ba582df2650b809f8e3e7a96d56e1cf177efdf1b3f7c282ddf5caf721ea6cc173e6238bb0f3fbd77ef53fbf98bf56292d734b2bdbd4fefd1883ecf97799d95cf41b467d9a228af5fafb265d1cc7bd87b94bcfd4b8236bf046cf6771e3c3cd8238ccf9a2fcfdb67797ebc5a95454edfb4f53ad78f5f130d2b42f13c2b1bfeec7555cebe5cb7fe276db69c3db9b69f0c6372d61c5f6645994dcadcb52ea8c3ddfb44e2e7d5943850f92c6bf33705cffaef7b177f6cedde7bf8e9fdbd87bbcccc9fecd0cf3bbfefdd8ff42dcb0a68da7967f760a7fb8ed0fdcbf3e3b2a4b7db7c4602d5368486fb4a08dc30b1943a9b679fda11fb153362995b4cda4d4dbda91a681aa32586512c2f4e97f874c6e3e19161ce480a68aa5faff269712b66f190bdfd4b1edac415e7e76feaec322f5fe51745d3e6355032988267b27a06c9f872593ae67993bdbb4944ef8fef9340bfa9daacbc8d54ee8eefef42a2875ef86ed1ce4f08b7a23d21844463d16b0fc79f1ee0b5afe84f02f40529dbec227f59175391ecf073a53c7ff3fb4fb5f3936a79495d900afa22abdfae571e814445fdfeb32102eaf7e77d74ed77558c2b3f7af480be6a7b44b46fb50354a0111f30a17ec9ff130000ffff" style="display:none">
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>             
+ 
+  <li id='ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7c9c98bde572fb2057f45bde465b5cc5c83a779d316cbaca57eb591fbee4d5e2fe8bbf2f455de9ccd3e7a746ff4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988cdf337c0a6fba576f5bc5aceaa65fa7cddd2a8bd56dd8e97ebb2a4af8b3a9fb64ca03dfcd54c8185c585fed754cbb3e593acc94fd6759d2fa7d71f3dda3d188358a38f4e7fd1ba582df2650b800f461f3dcb6a378ef8bbfb9f8e1f3e94966fae57390f53e60b1f01cea7bb0f3fdd7fb8bf673e7fb15e4cf29a46b6b7f7e9031ad1e7f932afb3f23988f62c5b14e5f5eb55b62c9a790f7b8f92b77f49d0e69780cdfece83879f7e4a189f355f9eb7cff2fc78b52a8b9cbe69eb75ae1fbf261a5684e2795636fcd9ebaa9c7db96efd4fda6c397b726d3f19c6e4ac39becc8a329b94b96b5dcc4076c2e97935250e543ecbdafc4dc1b3fefbdec51f5bbbf71e7e7afffefea7cccc9fececeeecdcf97def7ea46f595640d3ce3bfbf7ee77df11ba7f797e5c96f4769bcf48a0da86d0705f09811b26965267f3ec533b62bf62462c738b49bba9a93755034d63b4c4308ae5c5e9129fce783c3c32ccd9478fee13dfbd5ee5d3e256cce2217bfb973cb4892bcecfdfd4d9655ebeca2f8aa6cd6ba0643005cf64f50c92f1e5b274ccf3267b779388de1f63246faa362b6f2395fbe3fbbb90e8a117be5bb4f313c2ad684f0821d15820d6f8fe3e5efb8afe24405f90b2cd2ef2977531a56ff7ef77bf50d233cd7fffa9f67e522d2fa90fd2415f64f5dbf5caa390e8a8df7f364441fdfebc8faffdae8ab1252babdfbfed51d1bed50e908186bccb94fa25ff4f000000ffff' class='selectable alt-lowest'>
+                           
+    <input class="flightDate" type="hidden" value='new Date(1396547100000)' />
+    <input class="flightArrivalDate" type="hidden" value='new Date(1396558200000)' />
+                           
+    <a id="Flight4079669" href="#" charge-debit="€51<div>.</div><span>51</span>" charge-credit="€52<div>.</div><span>54</span>" charge-credit-full="52.5400" charge-debit-full="51.5100" class="standard oftcctoggle ShowUrgencyMessage urgencyMessagePriority_3" 
+       title="Hurry! Only 1 seats left at this price">
+                               
+        <span  class="title" >Lowest Fare</span>
+
+        <span class="priceSmaller targetPrice formatedPrice cellPrice">
+            €51<div>.</div><span>51</span>
+        </span>
+        <span class="time">
+            <span class="hidden">
+                Departure
+                03/04/2014 17:45
+            </span>
+            <span  aria-hidden="true" >Dep </span>
+            <span aria-hidden="true">17:45</span>
+        </span> 
+        <span class="time">
+            <span class="hidden">
+                Arrival
+                03/04/2014 20:50
+            </span>
+            <span  aria-hidden="true" >Arr </span>
+            <span aria-hidden="true">20:50</span>
+        </span>
+        
+            <span class="accessibility_hidden">Hurry! Only 1 seats left at this price</span>
+        
+    </a>      
+
+</li>            
+
+
+<li id="DayLoading_ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7c9c98bde572fb2057f45bde465b5cc5c83a779d316cbaca57eb591fbee4d5e2fe8bbf2f455de9ccd3e7a746ff4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988cdf337c0a6fba576f5bc5aceaa65fa7cddd2a8bd56dd8e97ebb2a4af8b3a9fb64ca03dfcd54c8185c585fed754cbb3e593acc94fd6759d2fa7d71f3dda3d188358a38f4e7fd1ba582df2650b800f461f3dcb6a378ef8bbfb9f8e1f3e94966fae57390f53e60b1f01cea7bb0f3fdd7fb8bf673e7fb15e4cf29a46b6b7f7e9031ad1e7f932afb3f23988f62c5b14e5f5eb55b62c9a790f7b8f92b77f49d0e69780cdfece83879f7e4a189f355f9eb7cff2fc78b52a8b9cbe69eb75ae1fbf261a5684e2795636fcd9ebaa9c7db96efd4fda6c397b726d3f19c6e4ac39becc8a329b94b96b5dcc4076c2e97935250e543ecbdafc4dc1b3fefbdec51f5bbbf71e7e7afffefea7cccc9fececeeecdcf97def7ea46f595640d3ce3bfbf7ee77df11ba7f797e5c96f4769bcf48a0da86d0705f09811b26965267f3ec533b62bf62462c738b49bba9a93755034d63b4c4308ae5c5e9129fce783c3c32ccd9478fee13dfbd5ee5d3e256cce2217bfb973cb4892bcecfdfd4d9655ebeca2f8aa6cd6ba0643005cf64f50c92f1e5b274ccf3267b779388de1f63246faa362b6f2395fbe3fbbb90e8a117be5bb4f313c2ad684f0821d15820d6f8fe3e5efb8afe24405f90b2cd2ef2977531a56ff7ef77bf50d233cd7fffa9f67e522d2fa90fd2415f64f5dbf5caa390e8a8df7f364441fdfebc8faffdae8ab1252babdfbfed51d1bed50e908186bccb94fa25ff4f000000ffff" style="display:none">
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>
+                    </ul>
+                </div>
+                
+                <div class="day" >
+                    <span id="BCN_LTNReturnDay1" class="dayDate selectedDate dayDate1">
+                        Fri 04 Apr
+                    </span>
+                    <ul class="middleRow">
+                                 
+ 
+  <li id='ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7c9c98bde572fb2057f45bde465b5cc5c83a779d316cbaca57eb591fbee4d5e2fe8bbf2f455de9ccd3e7a746ff4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988cdf337c0a6fba576f5bc5aceaa65fa7cddd2a8bd56dd8e97ebb2a4af8b3a9fb64ca03dfcd54c8185c585fed754cbb3e593acc94fd6759d2fa7d71f3dda3d188358a38f4e7fd1ba582df2650b809f8e3e7a96d56e1c03efee3e1c3f7c284ddf5caf721ea74c183e6240bb0f3fddff74e781f9fcc57a31c96b1adadedea7f768489fe7cbbccecae7a0dab36c5194d7af57d9b268e63df43d52defe25c19b5f0236fb3b0f1e1edcc31fcd97e7edb33c3f5eadca22a76fda7a9debc7af898815a1789e950d7ff6ba2a675fae5bff93365bce9e5cdb4f8631396b8e2fb3a2cc2665ee5a17d4e1ee7da2f1f36a4a2ca88c96b5f99b82a7fdf7bd8b3fb676ef3dfcf4d3ddfbf7999b3fd9d9ddd9b9f3fbdefd48dfb2bc80a69d7776f6f7bbef08ddbf3c3f2e4b7abbcd6724516d4368b8af84c00d134ba9b379faa91df15f31239eb9c5a4ddd4d49baa81a6315a6218c5f2e274894f673c1e1e19e6eca347f7f7e9cf553e2d6ec52c1eb2b77fc9439bb8e2fcfc4d9d5de6e5abfca268dabc064a0653f04c56cf20195f2e4bc73c6fb27737c9d9fdf17d92e837559b95b712cb07e3fbbb90e9a137be5bb4f31342ae684f0823d159f4dede03d5055fd1df04ea0bd2b7d945feb22ea6f87af7a0fb8d529f35dfef3f55044eaae525f5427ae88bac7ebb5e7944123df5fbcf8688a8df9ff731b6df5531cefce8112998dfbfed11d2bed50e100283de6762fd92ff270000ffff' class='selectable standard'>
+                           
+    <input class="flightDate" type="hidden" value='new Date(1396608000000)' />
+    <input class="flightArrivalDate" type="hidden" value='new Date(1396619100000)' />
+                           
+    <a id="Flight4079830" href="#" charge-debit="€124<div>.</div><span>51</span>" charge-credit="€127<div>.</div><span>00</span>" charge-credit-full="127.0000" charge-debit-full="124.5100" class="standard oftcctoggle ShowUrgencyMessage urgencyMessagePriority_3" 
+       title="Hurry! Only 3 seats left at this price">
+                               
+        
+
+        <span class="priceSmaller targetPrice formatedPrice cellPrice">
+            €124<div>.</div><span>51</span>
+        </span>
+        <span class="time">
+            <span class="hidden">
+                Departure
+                04/04/2014 10:40
+            </span>
+            <span  aria-hidden="true" >Dep </span>
+            <span aria-hidden="true">10:40</span>
+        </span> 
+        <span class="time">
+            <span class="hidden">
+                Arrival
+                04/04/2014 13:45
+            </span>
+            <span  aria-hidden="true" >Arr </span>
+            <span aria-hidden="true">13:45</span>
+        </span>
+        
+            <span class="accessibility_hidden">Hurry! Only 3 seats left at this price</span>
+        
+    </a>      
+
+</li>            
+
+
+<li id="DayLoading_ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7c9c98bde572fb2057f45bde465b5cc5c83a779d316cbaca57eb591fbee4d5e2fe8bbf2f455de9ccd3e7a746ff4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988cdf337c0a6fba576f5bc5aceaa65fa7cddd2a8bd56dd8e97ebb2a4af8b3a9fb64ca03dfcd54c8185c585fed754cbb3e593acc94fd6759d2fa7d71f3dda3d188358a38f4e7fd1ba582df2650b809f8e3e7a96d56e1c03efee3e1c3f7c284ddf5caf721ea74c183e6240bb0f3fddff74e781f9fcc57a31c96b1adadedea7f768489fe7cbbccecae7a0dab36c5194d7af57d9b268e63df43d52defe25c19b5f0236fb3b0f1e1edcc31fcd97e7edb33c3f5eadca22a76fda7a9debc7af898815a1789e950d7ff6ba2a675fae5bff93365bce9e5cdb4f8631396b8e2fb3a2cc2665ee5a17d4e1ee7da2f1f36a4a2ca88c96b5f99b82a7fdf7bd8b3fb676ef3dfcf4d3ddfbf7999b3fd9d9ddd9b9f3fbdefd48dfb2bc80a69d7776f6f7bbef08ddbf3c3f2e4b7abbcd6724516d4368b8af84c00d134ba9b379faa91df15f31239eb9c5a4ddd4d49baa81a6315a6218c5f2e274894f673c1e1e19e6eca347f7f7e9cf553e2d6ec52c1eb2b77fc9439bb8e2fcfc4d9d5de6e5abfca268dabc064a0653f04c56cf20195f2e4bc73c6fb27737c9d9fdf17d92e837559b95b712cb07e3fbbb90e9a137be5bb4f31342ae684f0823d159f4dede03d5055fd1df04ea0bd2b7d945feb22ea6f87af7a0fb8d529f35dfef3f55044eaae525f5427ae88bac7ebb5e7944123df5fbcf8688a8df9ff731b6df5531cefce8112998dfbfed11d2bed50e100283de6762fd92ff270000ffff" style="display:none">
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>             
+ 
+  <li id='ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7c9c98bde572fb2057f45bde465b5cc5c83a779d316cbaca57eb591fbee4d5e2fe8bbf2f455de9ccd3e7a746ff4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988cdf337c0a6fba576f5bc5aceaa65fa7cddd2a8bd56dd8e97ebb2a4af8b3a9fb64ca03dfcd54c8185c585fed754cbb3e593acc94fd6759d2fa7d71f3dda3d188358a38f4e7fd1ba582df2650b800f461f3dcb6a378e8177771f8e1f3e94a66fae57398f53260c1f01d0a7bb0f3fbd7f70ffa1f9fcc57a31c96b1adadedea70f68489fe7cbbccecae7a0dab36c5194d7af57d9b268e63df43d52defe25c19b5f0236fb3b0f1e7efa007f345f9eb7cff2fc78b52a8b9cbe69eb75ae1fbf26225684e2795636fcd9ebaa9c7db96efd4fda6c397b726d3f19c6e4ac39becc8a329b94b96b5dcc407742e3793525165446cbdafc4dc1d3fefbdec51f5bbbf71e7efae9feae70f3273bf4cb9ddff7ee47fa96e50534edbcb3f7f061f71da1fb97e7c765496fb7f98c24aa6d080df79510b861622975364f3fb523fe2b66c433b798b49b9a7a5335d034464b0ca3585e9c2ef1e98cc7c323c39c11f77d4a7faef269712b66f190bdfd4b1edac415e7e76feaec322f5fe51745d3e6355032988267b27a06c9f872593ae67993bdbb49ceee8fef9344bfa9daacbc95583e18dfdf854c0fbdf1dda29d9f1072457b421889cea2f7f61ea82ef88afe26505f90becd2ef297753115d90e3f57daf337bfff54bb3fa99697d40769a12fb2faed7ae59148b4d4ef3f1b22a17e7fdec7d77e57c5f892d5d5efdff6c868df6a07c88021ef33a97ec9ff130000ffff' class='selectable standard'>
+                           
+    <input class="flightDate" type="hidden" value='new Date(1396633500000)' />
+    <input class="flightArrivalDate" type="hidden" value='new Date(1396644600000)' />
+                           
+    <a id="Flight4079670" href="#" charge-debit="€124<div>.</div><span>51</span>" charge-credit="€127<div>.</div><span>00</span>" charge-credit-full="127.0000" charge-debit-full="124.5100" class="standard oftcctoggle" 
+       title="">
+                               
+        
+
+        <span class="priceSmaller targetPrice formatedPrice cellPrice">
+            €124<div>.</div><span>51</span>
+        </span>
+        <span class="time">
+            <span class="hidden">
+                Departure
+                04/04/2014 17:45
+            </span>
+            <span  aria-hidden="true" >Dep </span>
+            <span aria-hidden="true">17:45</span>
+        </span> 
+        <span class="time">
+            <span class="hidden">
+                Arrival
+                04/04/2014 20:50
+            </span>
+            <span  aria-hidden="true" >Arr </span>
+            <span aria-hidden="true">20:50</span>
+        </span>
+        
+    </a>      
+
+</li>            
+
+
+<li id="DayLoading_ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7c9c98bde572fb2057f45bde465b5cc5c83a779d316cbaca57eb591fbee4d5e2fe8bbf2f455de9ccd3e7a746ff4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988cdf337c0a6fba576f5bc5aceaa65fa7cddd2a8bd56dd8e97ebb2a4af8b3a9fb64ca03dfcd54c8185c585fed754cbb3e593acc94fd6759d2fa7d71f3dda3d188358a38f4e7fd1ba582df2650b800f461f3dcb6a378e8177771f8e1f3e94a66fae57398f53260c1f01d0a7bb0f3fbd7f70ffa1f9fcc57a31c96b1adadedea70f68489fe7cbbccecae7a0dab36c5194d7af57d9b268e63df43d52defe25c19b5f0236fb3b0f1e7efa007f345f9eb7cff2fc78b52a8b9cbe69eb75ae1fbf26225684e2795636fcd9ebaa9c7db96efd4fda6c397b726d3f19c6e4ac39becc8a329b94b96b5dcc407742e3793525165446cbdafc4dc1d3fefbdec51f5bbbf71e7efae9feae70f3273bf4cb9ddff7ee47fa96e50534edbcb3f7f061f71da1fb97e7c765496fb7f98c24aa6d080df79510b861622975364f3fb523fe2b66c433b798b49b9a7a5335d034464b0ca3585e9c2ef1e98cc7c323c39c11f77d4a7faef269712b66f190bdfd4b1edac415e7e76feaec322f5fe51745d3e6355032988267b27a06c9f872593ae67993bdbb49ceee8fef9344bfa9daacbc95583e18dfdf854c0fbdf1dda29d9f1072457b421889cea2f7f61ea82ef88afe26505f90becd2ef297753115d90e3f57daf337bfff54bb3fa99697d40769a12fb2faed7ae59148b4d4ef3f1b22a17e7fdec7d77e57c5f892d5d5efdff6c868df6a07c88021ef33a97ec9ff130000ffff" style="display:none">
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>
+                    </ul>
+                </div>
+                
+                <div class="day" >
+                    <span id="BCN_LTNReturnDay2" class="dayDate  dayDate2">
+                        Sat 05 Apr
+                    </span>
+                    <ul class="">
+                                 
+ 
+  <li id='ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7c9c98bde572fb2057f45bde465b5cc5c83a779d316cbaca57eb591fbee4d5e2fe8bbf2f455de9ccd3e7a746ff4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988cdf337c0a6fba576f5bc5aceaa65fa7cddd2a8bd56dd8e97ebb2a4af8b3a9fb64ca03dfcd54c8185c585fed754cbb3e593acc94fd6759d2fa7d71f3dda3d188358a38f4e7fd1ba582df2650b809f8e3e7a96d56e1c03efee3e1c3f7c284ddf5caf721ea74c183e6240bb0f3fdd7ff8f053f3f98bf56292d734b4bdbd4fefd1903ecf97799d95cf41b567d9a228af5fafb265d1cc7be87ba4bcfd4b8237bf046cf6771e3cfcf4fe01fdd17c79de3ecbf3e3d5aa2c72faa6add7b97efc9a8858118ae759d9f067afab72f6e5baf53f69b3e5ecc9b5fd641893b3e6f8322bca6c52e6ae75411deede279a3cafa6c482ca68599bbf2978da7fdfbbf8636bf7dec34f1fecdc7bc0dcfcc9ceeecece9ddff7ee47fa96e505340ddff9f4e1dea7dd7784ee5f9e1f9725bddde63392a8b62134dc5742e08689a5d4d93cfdd48ef8af9811cfdc62d26e6aea4dd540d3182d318c627971bac4a7331e0f8f0c7346dc47c05eaff269712b66f190bdfd4b1edac415e7e76feaec322f5fe51745d3e6355032988267b27a06c9f872593ae67993bdbb49ceee8fef9344bfa9daacbc95583e18dfdf854c0fbdf1dda29d9f1072457b421889cea2f7f61ea82ef88afe26505f90becd2ef2977531c5d7bb07dd6f94fa4cf6df7faa089c54cb4bea85f4d01759fd76bdf288247aeaf79f0d1151bf3fef636cbfab629cf9d1a307f455db23a47dab1d200406bdcfc4fa25ff4f000000ffff' class='selectable standard'>
+                           
+    <input class="flightDate" type="hidden" value='new Date(1396696200000)' />
+    <input class="flightArrivalDate" type="hidden" value='new Date(1396707300000)' />
+                           
+    <a id="Flight4079658" href="#" charge-debit="€124<div>.</div><span>51</span>" charge-credit="€127<div>.</div><span>00</span>" charge-credit-full="127.0000" charge-debit-full="124.5100" class="standard oftcctoggle ShowUrgencyMessage urgencyMessagePriority_3" 
+       title="Hurry! Only 1 seats left at this price">
+                               
+        
+
+        <span class="priceSmaller targetPrice formatedPrice cellPrice">
+            €124<div>.</div><span>51</span>
+        </span>
+        <span class="time">
+            <span class="hidden">
+                Departure
+                05/04/2014 11:10
+            </span>
+            <span  aria-hidden="true" >Dep </span>
+            <span aria-hidden="true">11:10</span>
+        </span> 
+        <span class="time">
+            <span class="hidden">
+                Arrival
+                05/04/2014 14:15
+            </span>
+            <span  aria-hidden="true" >Arr </span>
+            <span aria-hidden="true">14:15</span>
+        </span>
+        
+            <span class="accessibility_hidden">Hurry! Only 1 seats left at this price</span>
+        
+    </a>      
+
+</li>            
+
+
+<li id="DayLoading_ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7c9c98bde572fb2057f45bde465b5cc5c83a779d316cbaca57eb591fbee4d5e2fe8bbf2f455de9ccd3e7a746ff4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988cdf337c0a6fba576f5bc5aceaa65fa7cddd2a8bd56dd8e97ebb2a4af8b3a9fb64ca03dfcd54c8185c585fed754cbb3e593acc94fd6759d2fa7d71f3dda3d188358a38f4e7fd1ba582df2650b809f8e3e7a96d56e1c03efee3e1c3f7c284ddf5caf721ea74c183e6240bb0f3fdd7ff8f053f3f98bf56292d734b4bdbd4fefd1903ecf97799d95cf41b567d9a228af5fafb265d1cc7be87ba4bcfd4b8237bf046cf6771e3cfcf4fe01fdd17c79de3ecbf3e3d5aa2c72faa6add7b97efc9a8858118ae759d9f067afab72f6e5baf53f69b3e5ecc9b5fd641893b3e6f8322bca6c52e6ae75411deede279a3cafa6c482ca68599bbf2978da7fdfbbf8636bf7dec34f1fecdc7bc0dcfcc9ceeecece9ddff7ee47fa96e505340ddff9f4e1dea7dd7784ee5f9e1f9725bddde63392a8b62134dc5742e08689a5d4d93cfdd48ef8af9811cfdc62d26e6aea4dd540d3182d318c627971bac4a7331e0f8f0c7346dc47c05eaff269712b66f190bdfd4b1edac415e7e76feaec322f5fe51745d3e6355032988267b27a06c9f872593ae67993bdbb49ceee8fef9344bfa9daacbc95583e18dfdf854c0fbdf1dda29d9f1072457b421889cea2f7f61ea82ef88afe26505f90becd2ef2977531c5d7bb07dd6f94fa4cf6df7faa089c54cb4bea85f4d01759fd76bdf288247aeaf79f0d1151bf3fef636cbfab629cf9d1a307f455db23a47dab1d200406bdcfc4fa25ff4f000000ffff" style="display:none">
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>             
+ 
+  <li id='ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7c9c98bde572fb2057f45bde465b5cc5c83a779d316cbaca57eb591fbee4d5e2fe8bbf2f455de9ccd3e7a746ff4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988cdf337c0a6fba576f5bc5aceaa65fa7cddd2a8bd56dd8e97ebb2a4af8b3a9fb64ca03dfcd54c8185c585fed754cbb3e593acc94fd6759d2fa7d71f3dda3d188358a38f4e7fd1ba582df2650b809f8e3e7a96d56e1cf1771fdc1f3f7c282ddf5caf721ea6cc173e6238bb0f3fdd7fb0bb6b3e7fb15e4cf29a46b6b7f7e9031ad1e7f932afb3f23988f62c5b14e5f5eb55b62c9a790f7b8f92b77f49d0e69780cdfece83879f3e78407f345f9eb7cff2fc78b52a8b9cbe69eb75ae1fbf261a5684e2795636fcd9ebaa9c7db96efd4fda6c397b726d3f19c6e4ac39becc8a329b94b96b5d5087bbf789c4cfab2971a0f259d6e66f0a9ef5dff72efed8dabd47c8ee3dd86766fe64677767e7ceef7bf7237dcbb2029a76ded9fdf45ef71da1fb97e7c765496fb7f98c04aa6d080df79510b86162297536cf3eb523f62b66c432b798b49b9a7a5335d034464b0ca3585e9c2ef1e98cc7c323c39c7df4e83e017bbdcaa7c5ad98c543f6f62f796813579c9fbfa9b3cbbc7c955f144d9bd740c9600a9ec9ea1924e3cb65e998e74df6ee2611bd3fbe4f02fda66ab3f23652796f7c7f17123df4c2778b767e42b815ed0921241aeba347077be3dd3dbcf615fd4980be20659b5de42feb624adf3ed8ef7ea1a4675df3fb4fb5f7936a79497d900efa22abdfae571e854447fdfeb3210aeaf7e77d7ced77558c2d0937faaaed51d1bed50e908186bcc394fa25ff4f000000ffff' class='selectable standard'>
+                           
+    <input class="flightDate" type="hidden" value='new Date(1396719900000)' />
+    <input class="flightArrivalDate" type="hidden" value='new Date(1396731000000)' />
+                           
+    <a id="Flight4079677" href="#" charge-debit="€80<div>.</div><span>51</span>" charge-credit="€82<div>.</div><span>12</span>" charge-credit-full="82.1200" charge-debit-full="80.5100" class="standard oftcctoggle ShowUrgencyMessage urgencyMessagePriority_3" 
+       title="Hurry! Only 2 seats left at this price">
+                               
+        
+
+        <span class="priceSmaller targetPrice formatedPrice cellPrice">
+            €80<div>.</div><span>51</span>
+        </span>
+        <span class="time">
+            <span class="hidden">
+                Departure
+                05/04/2014 17:45
+            </span>
+            <span  aria-hidden="true" >Dep </span>
+            <span aria-hidden="true">17:45</span>
+        </span> 
+        <span class="time">
+            <span class="hidden">
+                Arrival
+                05/04/2014 20:50
+            </span>
+            <span  aria-hidden="true" >Arr </span>
+            <span aria-hidden="true">20:50</span>
+        </span>
+        
+            <span class="accessibility_hidden">Hurry! Only 2 seats left at this price</span>
+        
+    </a>      
+
+</li>            
+
+
+<li id="DayLoading_ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b3593e3b5b3e2b8b8b79fb3acfeae9fc75de3445b5fce8d1473bfa6c47fe31cf47a38f8eebbab8cccae3a25e55757b52cd727af7c9c98bde572fb2057f45bde465b5cc5c83a779d316cbaca57eb591fbee4d5e2fe8bbf2f455de9ccd3e7a746ff4d1c93cab2ff2e345b55eb62ff3fa6c799e2ddb8f1eed8c3e7a9aafb2ba5dd77988cdf337c0a6fba576f5bc5aceaa65fa7cddd2a8bd56dd8e97ebb2a4af8b3a9fb64ca03dfcd54c8185c585fed754cbb3e593acc94fd6759d2fa7d71f3dda3d188358a38f4e7fd1ba582df2650b809f8e3e7a96d56e1cf1771fdc1f3f7c282ddf5caf721ea6cc173e6238bb0f3fdd7fb0bb6b3e7fb15e4cf29a46b6b7f7e9031ad1e7f932afb3f23988f62c5b14e5f5eb55b62c9a790f7b8f92b77f49d0e69780cdfece83879f3e78407f345f9eb7cff2fc78b52a8b9cbe69eb75ae1fbf261a5684e2795636fcd9ebaa9c7db96efd4fda6c397b726d3f19c6e4ac39becc8a329b94b96b5d5087bbf789c4cfab2971a0f259d6e66f0a9ef5dff72efed8dabd47c8ee3dd86766fe64677767e7ceef7bf7237dcbb2029a76ded9fdf45ef71da1fb97e7c765496fb7f98c04aa6d080df79510b86162297536cf3eb523f62b66c432b798b49b9a7a5335d034464b0ca3585e9c2ef1e98cc7c323c39c7df4e83e017bbdcaa7c5ad98c543f6f62f796813579c9fbfa9b3cbbc7c955f144d9bd740c9600a9ec9ea1924e3cb65e998e74df6ee2611bd3fbe4f02fda66ab3f23652796f7c7f17123df4c2778b767e42b815ed0921241aeba347077be3dd3dbcf615fd4980be20659b5de42feb624adf3ed8ef7ea1a4675df3fb4fb5f7936a79497d900efa22abdfae571e854447fdfeb3210aeaf7e77d7ced77558c2d0937faaaed51d1bed50e908186bcc394fa25ff4f000000ffff" style="display:none">
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>
+                    </ul>
+                </div>
+                
+                
+                <div class="day">
+                 <span>Sun 06 Apr</span>
+                 <ul>
+                 
+<li >
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>
+<li >
+    <div class="loaderImageContainer">
+        <img src="/Content/Images/easyJetImages/ajax-loader-white.gif" alt="Please wait" width="22" height="22" />
+    </div>
+ </li>
+                 </ul>
+                </div>
+                </div>
+            </div>
+            <div class="next">
+                <a class='ReturnNextDay'
+                    href="javascript:void(0);" id="BCN_LTNReturnNextBtn">
+                    <img  name="NextDay"  id="ReturnNextDay"  alt="Next day"  height="14"  width="14"  src="/Content/Images/easyJetImages/btn_next.gif"  />
+                </a>
+            </div>
+        </div>
+
+        
+    </div>
+    
+
+
+        <script type="text/javascript">
+            if (typeof (LookAndBookProcessRoute) == typeof (Function)) {
+                LookAndBookProcessRoute();
+            }
+        </script>
+         
+
+
+    
+</div>
+
+    
+
+<div class="intro">
+    
+    <p>
+        </p>
+    
+    <p>
+        </p>
+    <p>
+        Don't forget we also fly from London Gatwick &amp; London Southend to Barcelona</p>
+                
+</div>
+
+        </div>
+    </div>
+    <!-- }}} calendarTabs -->
+    <!-- ########## END CALENDAR TABS ######### -->
+    
+    <!-- Pelas -->
+    
+           
+        <div class="informationBox contain " id="FaresInfo">
+            
+
+<div id="StandardFareTerms">
+    
+            <p style=" margin: 20px 0;">If you are booking our standard fares:</p>
+            
+    
+            <div class="Column">
+              <span class="infoIcon"></span>
+                <p><strong>Fares on this page:</strong></p>
+                <ul>
+                  <li>Are one way per passenger.</li>
+                    <li>Include all taxes, fees and charges.</li>
+                    
+                        <li>Include credit card fee of 2.0% when “pay by credit card” option is selected.</li>
+                    
+                    <li>Exclude checked baggage and sports equipment.</li>
+                    <li>Show all times local to the relevant airport.</li>
+                </ul> 
+              <br /><span class="infoIcon"></span>
+                <p><strong>Admin fee and Charges:</strong></p>
+                <ul>                    
+                    
+                    
+
+                    <li id="AllBookingsStandardFlightFee">An admin fee of €14.00 is included in your booking. This has been divided across the number of passengers travelling and included in the fare price.</li>  
+                    <li>Bookings made by Visa Credit Card, MasterCard Credit, Diners Club, American Express, UATP/Airplus will incur an additional fee of 2.0% of the total transaction value.</li>
+
+                    
+                    
+                    <li>Note this is a UK retail site. Non UK Cardholders transacting on this site may be subject to a cross border fee applied by their Card Issuer.</li>
+                </ul>                  
+            </div>
+            <div class="Column end">
+              <span class="infoIcon"></span>
+                <p><strong>Check-in (hold) luggage:</strong></p>
+                <ul>
+                    <li>On the next page you can add check-in (hold) luggage to your booking and purchase extra weight, and you’ll be shown the relevant fee.</li>
+                    <li>Pre-booking your hold luggage online is much cheaper than paying at the airport, and much less hassle.</li>           
+                </ul>    
+                 <br /><span class="infoIcon"></span>
+                <p><strong>Cabin bags: All fares</strong></p>
+                <ul id="standardCabinBagsPolicy">
+                    <li>ONE piece of cabin baggage per person.</li>
+                    <li>If you bring a bag no bigger than 50 x 40 x 20cm we can guarantee this size will always travel with you either in the overhead locker or, if necessary, under the seat in front of you.</li>
+                    <li>You can still bring a bag up to 56 x 45 x 25cm, but it’s likely that on some of our busy flights your bag may have to go in the hold.</li>
+                    <li>easyJet Plus cardholders or customers who purchase an easyJet Plus Up Front/Extra Legroom seat are allowed to bring ONE piece of cabin baggage no bigger than 56 x 45 x 25cm (including handles and wheels). Overhead locker space is limited so you can use the easyJet Plus Speedy Boarding queue to board first and secure your space.</li>
+                </ul>
+              <br /><span class="infoIcon"></span>
+                <p><strong>Travel Insurance:</strong></p>
+                <ul>
+                    <li>For your peace of mind you can add travel insurance to your booking when you go on to the next page, "Flight Extras".</li>
+                    <li>If you don't wish to take up this option, or if you already have travel insurance, you don’t have to do anything.</li>
+                </ul>
+            </div>
+        
+        </div>
+        
+        
+        
+        <div id="FlexiFareTerms">
+        
+            <p style=" margin: 20px 0;">If you are booking our <span class="FlexiWord">FLEXI</span> fares:</p>
+
+            <div class="Column">
+              <span class="infoIcon"></span>
+                <p><strong>Fares on this page:</strong></p>
+                <ul>
+                  <li>Are one way per passenger.</li>
+                    <li>Include all government taxes and airport fees</li>
+                    <li>Include 1 piece of standard hold baggage, Speedy Boarding, and unlimited date changes within a 4 week period per passenger.</li>
+                    <li>Show all times local to the relevant airport.</li>
+                    <li>Flexi fares are available to book 120 days from the current date.</li>
+                </ul> 
+                      
+            </div>
+            <div class="Column end">
+              <span class="infoIcon"></span>
+                <p><strong>Check-in (hold) luggage:</strong></p>
+                <ul>
+                    <li>On the next page you can add check-in (hold) luggage and purchase extra weight, in addition to the free hold bag available with Flexi. You'll be shown the relevant fee.</li>
+                    <li>Pre-booking your hold luggage online is much cheaper than paying at the airport, and much less hassle.</li>
+                </ul>    
+              <br /><span class="infoIcon"></span>
+                <p><strong>Cabin bags: <span class="FlexiWord">FLEXI</span> fares</strong></p>
+                <ul id="flexiCabinBagsPolicy">
+                    <li><span class="FlexiWordNormal">FLEXI</span> fare customers are allowed to bring ONE piece of cabin baggage no bigger than 56 x 45 x 25cm (including handles and wheels).</li>
+                    <li>Overhead locker space is limited so you can use the easyJet Plus Speedy Boarding queue to board first and secure your space.</li>
+                </ul>
+            </div>
+        
+        </div>
+        
+        </div>    
+</div>
+
+<div id="sessionTimeoutDialog" data-warn-timeout="1170000" data-redirect-timeout="30000" data-redirect-url="/EN/" role="alertdialog" aria-live="assertive" aria-labelledby="sessionTimeoutDialog_title" aria-describedby="sessionTimeoutDialog_text">
+    <div class="head"></div>
+    <div class="box">
+        <p class="title" id="sessionTimeoutDialog_title">This page has a 20 minute inactivity timeout period.</p>
+        <p id="sessionTimeoutDialog_text">To make sure that the items in your basket are up to date, available and accurately priced, this page times out after 20 minutes of inactivity when you will be taken back to the home page.</p>
+        <p>In 30 seconds this page will time out. Would you like to continue with your booking?</p>
+        <div class="simplButtonHolder">
+            <a href="#" id="sessionTimeoutDialog_yesButton" class="margin-right" role="button">
+                <span>Yes</span>
+            </a>
+            <a href="#" id="sessionTimeoutDialog_noButton" role="button">
+                <span>No</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <!-- dont show basket if this is the maintenance mode page -->
+                
+
+                <div id="floatItin" class="ColumnRight" style="z-index: 100">
+
+                    <div>
+                <div id="basketPanel">
+              
+
+<script type="text/javascript" language="javascript">
+    var BasketUrl = '/EN/BasketView.mvc/Show?FlightOptionsState=Visible';
+    
+    var flightsAndOptionsMsg = '+ 0 flight options';
+    var hideFlightOptionsMsg = '[hide flight details]';
+    var showFlightOptionsMsg = '[show all flight details]';
+    var showReminderForOptInFlightOptions = false;
+    var optInForAllFlightOptions = true;
+    var travelInsuranceAvailable = false;
+    var travelInsuranceAdded = false;
+    var bagsAdded = false;
+    var imagePath = '/Content/Images/easyJetImages/';
+    var basketLockedMsg = 'Basket position locked';
+    var basketUnlockedMsg = 'Basket position unlocked';
+    var flightCountInBasket = 0;
+    var IsFlexiFareInBasket =  false;
+    var hasNonOFTFlight = false;
+    var hasRegisterFlightsClicked = false;
+    var seatingAdded = false;
+    var seatingAvailable =  true;
+    var showHotelsPopUnder = false;
+    var hotelsPopUnderUrl = "";
+    var hotelsPopUnderEnabledBrowsersJson = [{"Browser":"InternetExplorer","Enabled":"SpecificVersions","Versions":[7,8]},{"Browser":"Firefox","Enabled":"All","Versions":null},{"Browser":"Chrome","Enabled":"SpecificVersions","Versions":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29]},{"Browser":"Safari","Enabled":"All","Versions":null},{"Browser":"Opera","Enabled":"None","Versions":null}];
+    
+</script>
+
+<script type="text/javascript">
+    $(document).ready(BasketOnload);
+    $(document).ready(itinBasketOnload);
+    $(document).ready(function () {     
+        $(document).triggerHandler("BasketReloaded");
+    });
+
+    
+
+    var currentPaymentMethod = "DL";
+    var IsAdminFeeWrappingOn = "True" === 'True';
+    var OftAdminFeeApplied = Number("0");
+    var IsFullAdminFeeApplied = "False" === 'True';
+</script>
+
+<div class="itineraryBox contain">
+  
+  <a href="#" id="padlock" tabindex="-1" title="Lock or unlock basket pod" role="button">
+    <img id="PadlockImage" src="/Content/Images/easyJetImages/unlocked.gif" alt="Basket position unlocked"  />
+  </a>
+  
+  <h2 id="Basket">Your Basket</h2>
+    
+  <p class='OrangeButton floatRight contain' ><a role="button"  name="btnTopContinue"  id="btnTopContinue"  style="display:none;"  class='greyed' title='Continue'><span>Continue</span></a></p><img class="optionAddBusyBasket" style="display:none" id="busyContinueBtnTop" src="/Content/Images/easyJetImages/ajax-loader-basket-grey.gif" alt="Please wait" />
+          
+  
+  <!-- end of continue button -->
+  <div class="itinerary inprocess contain clear">
+    
+
+<div class="currency">
+    <label  for="DisplayCurrency" >Show in currency</label>
+        <span class="selectWrapper">
+            <select  name="DisplayCurrency"  id="DisplayCurrency" ><option  value="GBP" >Pounds Sterling</option>
+<option  value="EUR"  selected="selected" >Euros</option>
+<option  value="CHF" >Swiss Francs</option>
+<option  value="DKK" >Danish Krona</option>
+<option  value="CSK" >Czech Krowns</option>
+<option  value="HUF" >Hungarian Forints</option>
+<option  value="PLN" >Polish Zloty</option>
+<option  value="MAD" >Moroccan Dirhams</option>
+<option  value="USD" >US Dollars</option>
+<option  value="SEK" >Swedish Kronor</option>
+</select>
+        </span>
+        <input type="hidden"  name="currencyChanged"  id="currencyChanged"  />
+    
+</div>
+<div class="detail done contain">
+    
+    <div class="content" style="width: 250px">
+        <div class="outbound">
+            Barcelona to London Luton
+            
+            <br />
+            <p class="selectFlightMessage">
+                Please, select outbound flight in the <a href="#OutboundFlightDetails">flight selector</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="detail done contain">
+    <div class="content" style="width: 250px">
+        <div class="return">
+            London Luton to Barcelona
+            
+            <br />
+            <p class="selectFlightMessage">
+                Please, select return flight in the <a href="#ReturnFlightDetails">flight selector</a>
+        </div>
+    </div>
+</div>
+<script language='javascript'>ShowHideModifyFlightMessage('false');</script>
+
+
+<div id="RemoveOftFlightPopUpOverlay" class="RemoveOftFlightPopUpOverlay" role="alertdialog" aria-live="assertive" aria-labelledby="OftFeeAppliedPopupTitle" aria-describedby="OftFeeAppliedPopupDesc1 OftFeeAppliedPopupDesc2">
+    <div class="overlay-header">
+        <div id="priceChangePopUpClose1" class="close">
+            <a href="#" tabindex="-1">close</a>
+        </div>
+    </div>
+    <div id="RemoveOftFlightPopUpContentPanel">
+        <div class="overlay-column">
+            <div class="overlay-content">
+                <h2 id="OftFeeAppliedPopupTitle">Information about your flight price</h2>
+                <p id="OftFeeAppliedPopupDesc1">The flight that has been removed contained an admin fee. This has been re-assigned to the next flight in your basket</p>
+                <p id="OftFeeAppliedPopupDesc2" class="orangeText">You still only pay €14.00 per booking</p>
+            </div>
+            <div id="priceChangePopUpClose2" class="overlay-button">
+                <p class="close"></p>
+                <p class='BrightOrangeBtn contain' ><a role="button"  name="OftPopupButtonButtonText652621"  id="OftPopupButtonButtonText652621"  href='#' title='OK'><span>OK</span></a></p>
+              
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <input type="hidden" class="OftPopUpOverlayFareType"/>
+    <input type="hidden" id="OftPopUpOverlayJson"/>
+    <input type="hidden" class="OftPopUpOverlayItemId"/>
+</div>
+
+     
+  </div>
+
+        
+
+<div class="TotalCost contain">
+    <div class="cost">
+        <div class="costLabel">
+        <span  id="GrandTotalCost" >Final Price</span> 
+        
+        <span class="formatedPrice cellPrice">
+            <strong>€0<div>.</div><span>00</span></strong>
+        </span>
+        </div>
+    </div>
+   
+    <div style="clear:both;"></div>
+   
+  
+    <div id="PaymentOptionsContainer">
+    
+        <div id="PaymentOptionsTable">
+
+            <div class="PaymentOption iPadPaymentOptionsSpacing">
+                
+                
+
+                <input type="radio" name="PaymentTypeGroup" id="radioVCredit" value="radioVCredit" onclick="UpdatePaymentMethod('VI')" />
+                
+                
+                 <label for="radioVCredit"> 
+                 <span class="pay-by">Pay by Credit Card: </span><strong>€0.00</strong>
+                 
+                 </label>
+                
+            </div>
+
+            <div class="PaymentOption">
+                
+                
+
+                    <input type="radio" name="PaymentTypeGroup" id="radioVDebit" value="radioVDebit" onclick="UpdatePaymentMethod('DL')" 
+                    
+                    checked="checked" />
+                
+                
+                 <label for="radioVDebit" class="pay-by pay-by-debit"> 
+                <span class="pay-by">
+                    Pay by Debit Card:<strong>€0.00</strong>
+                 </span>
+                 
+                 </label>
+
+            </div>
+
+        </div>
+
+    </div>
+
+ </div><!-- }}} TotalCost -->
+ <script type="text/javascript">
+     $(document).ready(function () {
+         $("div.TotalCost").find("div.cost").snugText();
+     });
+ </script>
+
+<p class='AddButton floatLeft contain' ><a role="button"  name="btnAddMoreFlights"  id="AddMoreFlights"  class='non-selected' title='Add more flights'><span>Add more flights</span></a></p>
+  
+  <!-- check if continue button can be disabled -->
+  
+  
+     <div id="btnContinueBasket">
+     <p class='OrangeButton floatRight contain' ><a role="button"  name="btnContinue"  id="btnContinue"  class='greyed' title='Continue'><span>Continue</span></a></p><img class="optionAddBusyBasket" style="display:none" id="busyContinueBtn" src="/Content/Images/easyJetImages/ajax-loader-basket-grey.gif" alt="Please wait" />
+      <div style="display: none;" id="GreyedContinueButtonMsg" class="CallOut">
+        <p>Click here to remove all seat selections for the current flight.</p>
+      <div class="CallOutBtm"></div>
+      </div>
+    </div>
+      
+            
+  
+  
+   
+
+
+</div><!--itineraryBox-->
+
+
+ 
+        
+
+<input type="hidden"  name="FlightOptionsState"  id="FlightOptionsState"  value="Visible"  />
+
+
+
+                        </div>
+                    </div>
+
+                    
+
+<div id="BasketBanner">
+    <iframe id="BasketBannerFrame"
+            src="http://www.easyjet.com/EN/sc/wp/Step1_bsktbanner?cache=20131224185635"
+            class="BasketBanner"
+            height="312"
+            width="295"
+            scrolling="no"
+            frameborder="0"
+            title="Basket Banner">
+    </iframe>
+</div>
+
+                </div>
+
+                 
+
+            <div class="push"></div>
+        </div>
+        
+
+<div class="footer">
+    
+  
+  
+  <script type="text/javascript">
+      function ViewStandbyTermsAndConditions() {
+
+          var winUrl = "https://" + window.location.hostname + "/" + "EN" + "/secure/myeasyjet.mvc/ViewTermsAndConditions?referringUrl=" + window.location;
+          window.location = winUrl;
+      }
+  </script>
+  
+    <div>
+     
+        <span><a target = "_blank" href="http://www.easyjet.com/EN/Sitemap/" title="Site Map">Site Map</a> | </span>
+                <span><a target = "_blank" href="http://support.easyjet.com" title="Help">Help</a> | </span>
+        <span><a target = "_blank" href="http://www.easyjet.com/en/book/acceptableuse.html" title="Acceptable Use Policy">Acceptable Use Policy</a> | </span>
+        <span>
+            
+                <a target = "_blank" href="http://www.easyjet.com/en/terms_and_conditions.html">Terms and Conditions</a>
+            
+        </span>
+        
+         
+    </div>
+        
+    <p>© easyJet airline company ltd. All rights reserved.</p>
+
+    
+</div>
+<input id="__BasketState" name="__BasketState" type="hidden" value="ecbd07601c499625262f6dca7b7f4af54ad7e074a10880601324d8904010ecc188cde692ec1d69472329ab2a81ca6556655d661640cced9dbcf7de7befbdf7de7befbdf7ba3b9d4e27f7dfff3f5c6664016cf6ce4adac99e2180aac81f3f7e7c1f3f227ef147c7b345b17c96e71f3ddadd1fefd033fae878dd568bac2da659595e1fcf66dfaecad993ece222bba0566dbdce471f3dc99afc645dd7f9727afdd1a35ffcd14935a3ef3e3afdead547a38f9ee6d36291952fcb6c9a371f3dda1b7df4fa7a31a94a6af09ffc217fdd47bf845f7f9bb7cfb23a7f73bda217efd14755f5b6585ebc582f2679fdd1a3e5ba2c471f9d64d3793e7b9e2d2fd6dcf947f9f2237c5a7fbba8f3a775b5faf2fcfc69d6e6b67d59e4cbf6ec25215de74d633f664cdb676571316f9fd2abd3b6a89604ee55deae6b06292d5eb7f98a0881bf1ba2415e03bd6f576d5e3e2bca1678ed6078f9ea79b17c2be05ee7593d9d83068f9fe64d5b2c33c03e2eea5555b720cbd1dbdffff77f924d31b867455ecea8dbe76f5e509f8f9f95f9bb6252e65f2e3186a6dff03c2b1b22f6e36f17b3fc659d5f16d5ba91fe86db9e354ff3f36c5d2a62c30dbfc841e9d3455694fd4642b7c7321b5f9e1fcf086004c15dafcdc9bc2889eacb7eab1dafd5d9f23c5bc640a1d197757151dc40bb27274cbb2fd7eda45a2f67a05ca4d5ef7b175f6cedde7b481c7d6f0f7cbdf309feb9f3fbdec5eb32f137befce9fd4f3fddd19777edcb42d96775b518249c34399b45a0ef00c4576f4e9e678dce117a7b532c36a272f0e0e12efd7bffe10163f14b1c1bbeccea7699d767687e757535ceb3e6faa7f3763cad5814bb2cf9225b40909e57cb59b54c9f93a883ff9f16cdaaccae3f40a44f4b1a4f312dda6b9564d229afb3c5aacca547218c6b7552e7b3a23d9967f5c52ddac581d107d5759e9f3d65f6e98893e57491d3e34b62f46c52940453c8fe9a3484a8812cbbb7bf3b9bed6f9fefed4cb6f777f307dbd9bd87f9f6ee74e7e1f96e3ecd0e76316b02e855bea82ef3d917593b9dd3304fea8214439175ba6b9e813b8dba7cb6aedb394d05f4cbab9c951a0bcfb7b3e64d9d5de6e5d9b259d7d9729abfcacfe93d7cade0a8c957cbd7eb29d1bd395f974adca715c9c78235936b89bf4ee6f9f4ed1953c090c97d4e42d3fb42b58591cf5755b5b07a931be0932f57e0a0f0732162ec9b37d54f16f995f9c80e8d74b5d3ec678d313cdfadb3d58a86f4e5d250ebac210dff3aaf2f8b69aed3565acb435f2a9312ef2c2f3c4a9d3564a88a5976dd2891826f18e321905f54b3e2fc5a66ce7b4bb484d1f0d218622be6eb75cbb4dc91cf86244d868b1637f3e18e3edb917fccf3910fccb365ae9f2ede3a1c7c1528581f3f3106f6af8af0cbbf6005a06f87968099b7abf899141d3dcf9f7d79de9ac93e5eadc8448bbab7ac43a6f3245b92cd56d1e9eb41213d5ac9a41b16d8d4124653a994b744f30df6955a8b54931a9c92dcb6f9ecaccd171b1191176e81b134bc25bcd7ab6c59347383c746945fcfabab936a495cb7ce9fac5b52e483f055bd0bb62f6b1202a163f3b25aad57c3bd9cbe2bc0d5172a50a49c72d03d66a960d5d4516c8eebfc7409098bd83fc58864eefa942cd577f216ca62933f03a5b9bb0110bedf1b06003289c0620ede146d9937c70d2ce7f07ce01d25162cde9cc695d79b9b7f4eb3572f17e444bec9de6d72e6b83129c4d99baacd22ae9707f365760d80afb25951c90c6fc6e1e59a049e3cf3998c773361f102a9084cef46a03f95d79599d80168bf8484b9af59c8cbafa779592d33e28d2f893a3549e4d335298029294e3648161b1da94a2a54c2936cf9f678ca52e02b2affe32054c017dd869d16d62f395ee07d5642646966fd4fba51483d933845fd8e77aba2bef62de9b3e25d3e234bbe6c3256c71eb8b3a659e7213ca0f9e51250cd2734fcbca6b06b4e3400753c8dae94f120069f9cbe9b96eb190d4b07e2b7c047ec16ded2aebc264fc47bd54eceeb7cbaaee18ab14110b4c8f8d58133c1dcac26cee1fa559303eaac0f9678e62579d015c66ad4dd695d57964aaff2e9f5b4cc75b22d32aff20bd249a4868cb5f8e8d1f7be8f8f1bb2ee4c390c790758b397eec798ce7127a2c81f2fabd9cffcbe77f3257bf62a0e1eac37d5dbfc3d2cf3ebbc247b9ccf9ee62b22cf9a6254a6d04de1887b2d1640da80d134eb8549362c322d5c7873433843efbcc9eb4573bc9c912921471b1699489eaf5acfb3e2b935ca85cd0745a39e19617adfd4e8bb453b57a79fb900af84beafe798998eb901a95e99e4377501f7b971d2f1d592dce0a2e52147f9e2f79fb02afc367d57d5d7a258bc0f9ed30f6918cd3fe8873c3444681496ac1a755f9ed4d515f18955592626a1bf3c45c1d361c010843372cba64469f18cbeddb6ab67557d45040154f5a1e9c3dfdb7efacc49c4cbac69aeaa406b18a10ad126a9ab8f2ff0d56a2d9f91b4fdfed31bb320bfffec96e1e2ef7f7ea32f7bcb98eaf72fa25ef6ef5fc05fd229442cb8d9bde626df987fed41eb39d8fcdd8087cddf0dbad8bf7fb5d144fe92ff270000ffff::::2CB5F5CC5AA7D2E991F0BB736F575C126982B1AF14374FC259FCF3417BA8094E0A" />
+    </div> 
+    </form>
+        <script type="text/javascript" src="/EN/linkedAirportsJSON?20100310"> </script>
+        <div id="addFlightsOverlay" class="addFlightsOverlay"></div>
+  <div id="TMAN_BOTTOM_BODY"></div><script>TMAN.doTags(TMAN.position.BOTTOM_BODY);</script>
+</body>
+</html>
