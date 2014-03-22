@@ -1,5 +1,6 @@
 require 'mechanize'
 require_relative 'easyjet_request_builder'
+require_relative 'easyjet_response_parser'
 
 module FlightScrapper
 
