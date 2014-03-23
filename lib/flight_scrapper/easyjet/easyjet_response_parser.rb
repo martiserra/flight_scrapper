@@ -31,10 +31,10 @@ module FlightScrapper
       
       
       outbound_days = results_page.search(OUTBOUND_DAYS)
-      outbound_flights = parse_day_group outbound_days
+      outbound_flights = parse_day_group outbound_days, true
       
       inbound_days = results_page.search(INBOUND_DAYS)
-      inbound_flights = parse_day_group inbound_days
+      inbound_flights = parse_day_group inbound_days, false
 
       outbound_flights.each { |s|
         puts s
@@ -49,11 +49,11 @@ module FlightScrapper
 
     # Parses a group of flights from U2 page, either outbound or inbound.
     # returns: FlightSegment Array
-    def self.parse_day_group day_group
+    def self.parse_day_group day_group, outbound
       segments = Array.new
       
       day_group.each{ |day| 
-        origin, destination = parse_locations day
+        origin, destination = parse_locations day, outbound
         if (is_origin_destination_valid? origin, destination) then 
           segments.concat(parse_flights(day, origin, destination))
         end
@@ -94,11 +94,11 @@ module FlightScrapper
       return CURRENCIES.has_key? currency_char ? CURRENCIES[currency_char] : currency_char
     end
 
-    def self.parse_locations segment_group
+    def self.parse_locations segment_group, outbound
       locations = segment_group.xpath('span').first.xpath('@id')[0].to_s
       origin = locations[0..2]
       destination = locations[4..6]
-      return origin, destination
+      return outbound ? [origin, destination] : [destination, origin]
     end
 
     def self.is_a_valid_segment? segment
