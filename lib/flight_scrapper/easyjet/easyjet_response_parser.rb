@@ -48,33 +48,43 @@ module FlightScrapper
 
     private
 
+    # Parses a group of flights from U2 page, either outbound or inbound.
+    # returns: FlightSegment Array
     def self.parse_day_group day_group
       segments = Array.new
       
       day_group.each{ |day| 
         origin, destination = parse_locations day
-        if ((origin != nil) && (destination != nil)) then 
+        if (is_origin_destination_valid? origin, destination) then 
           segments.concat(parse_flights(day, origin, destination))
         end
       }
       return segments
     end
     
+    # Parses a group of flights for the same day from U2 page
+    # returns: FlightSegment Array
     def self.parse_flights segment_group, origin, destination
       segments = Array.new
       segment_group.xpath('ul/li').each{ |segment| 
 
-        if (!segment.xpath(PRICE).empty?) then
-          price = segment.xpath(PRICE).to_s.to_f
-          departure_date = parse_date segment.xpath(DEPARTURE_DATE).to_s
-          arrival_date = parse_date segment.xpath(ARRIVAL_DATE).to_s
-          currency = parse_currency segment.xpath(CURRENCY).to_s
-
-          segments << FlightSegment.new(origin, destination, departure_date, arrival_date, price, 'EUR')
+        if (is_a_valid_segment? segment) then
+          segments << parse_and_create_segment(segment, origin, destination)
         end
       }
       return segments
     end
+
+    # Parses a concrete flight and returns its corresponding FlightSegment
+    def self.parse_and_create_segment segment, origin, destination
+      price = segment.xpath(PRICE).to_s.to_f
+      departure_date = parse_date segment.xpath(DEPARTURE_DATE).to_s
+      arrival_date = parse_date segment.xpath(ARRIVAL_DATE).to_s
+      currency = parse_currency segment.xpath(CURRENCY).to_s
+
+      return FlightSegment.new(origin, destination, departure_date, arrival_date, price, 'EUR')
+    end
+
 
     def self.parse_date date_string
       return Time.at(date_string.delete("^0-9").to_i / 1000) - 3600
@@ -90,6 +100,14 @@ module FlightScrapper
       origin = locations[0..2]
       destination = locations[4..6]
       return origin, destination
+    end
+
+    def self.is_a_valid_segment? segment
+      return !segment.xpath(PRICE).empty?
+    end
+
+    def self.is_origin_destination_valid? origin, destination
+      return !origin.nil? && !destination.nil?
     end
   end
 end
