@@ -7,7 +7,6 @@ module FlightScrapper
   class EasyjetResponseParser
 
     # xpath expressions
-    #OUTBOUND = '//div[@id="OutboundFlightDetails"]'
     OUTBOUND_DAYS = '//div[@id="OutboundFlightDetails"]//div[@class="day"]'
     INBOUND_DAYS = '//div[@id="ReturnFlightDetails"]//div[@class="day"]'
     DEPARTURE_DATE = 'input[@class="flightDate"]/@value'
