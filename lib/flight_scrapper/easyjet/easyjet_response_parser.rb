@@ -81,7 +81,7 @@ module FlightScrapper
       arrival_date = parse_date segment.xpath(ARRIVAL_DATE).to_s
       currency = parse_currency segment.xpath(CURRENCY).to_s
 
-      return FlightSegment.new(origin, destination, departure_date, arrival_date, price, 'EUR')
+      return FlightSegment.new(origin, destination, departure_date, arrival_date, price, currency)
     end
 
 
@@ -91,7 +91,7 @@ module FlightScrapper
 
     def self.parse_currency currency_string
       currency_char = currency_string[0]
-      return CURRENCIES.has_key? currency_char ? CURRENCIES[currency_char] : currency_char
+      return CURRENCIES.has_key?(currency_char) ? CURRENCIES[currency_char] : currency_char
     end
 
     def self.parse_locations segment_group, outbound
