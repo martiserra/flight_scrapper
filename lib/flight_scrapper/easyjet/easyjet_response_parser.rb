@@ -7,8 +7,9 @@ module FlightScrapper
   class EasyjetResponseParser
 
     # xpath expressions
-    OUTBOUND = '//div[@id="OutboundFlightDetails"]'
-    DAY = '//div[@class="day"]'
+    #OUTBOUND = '//div[@id="OutboundFlightDetails"]'
+    OUTBOUND_DAYS = '//div[@id="OutboundFlightDetails"]//div[@class="day"]'
+    INBOUND_DAYS = '//div[@id="ReturnFlightDetails"]//div[@class="day"]'
     DEPARTURE_DATE = 'input[@class="flightDate"]/@value'
     ARRIVAL_DATE = 'input[@class="flightArrivalDate"]/@value'
     PRICE = 'a/@charge-debit-full'
@@ -28,21 +29,36 @@ module FlightScrapper
     }
 
     def self.parse_availability results_page, search_criteria 
-      segments = Array.new
-      segment_results = results_page.search(OUTBOUND)[0]
-      days = segment_results.xpath(DAY)
-      days.each{ |day| 
-        origin, destination = parse_locations day
-        if ((origin != nil) && (destination != nil)) then 
-          segments.concat(parse_flights(day, origin, destination))
-        end
+      
+      
+      outbound_days = results_page.search(OUTBOUND_DAYS)
+      outbound_flights = parse_day_group outbound_days
+      
+      inbound_days = results_page.search(INBOUND_DAYS)
+      inbound_flights = parse_day_group inbound_days
+
+      outbound_flights.each { |s|
+        puts s
       }
-      segments.each { |s|
+      puts "---"
+      inbound_flights.each { |s|
         puts s
       }
     end
 
     private
+
+    def self.parse_day_group day_group
+      segments = Array.new
+      
+      day_group.each{ |day| 
+        origin, destination = parse_locations day
+        if ((origin != nil) && (destination != nil)) then 
+          segments.concat(parse_flights(day, origin, destination))
+        end
+      }
+      return segments
+    end
     
     def self.parse_flights segment_group, origin, destination
       segments = Array.new
