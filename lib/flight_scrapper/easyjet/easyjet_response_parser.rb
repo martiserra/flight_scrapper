@@ -28,7 +28,7 @@ module FlightScrapper
       'Md' => 'MAD'
     }
 
-    def self.parse_availability results_page, search_criteria 
+    def self.parse_availability results_page 
       outbound_flights = parse_day_group(results_page.search(OUTBOUND_DAYS), true)
       inbound_flights = parse_day_group(results_page.search(INBOUND_DAYS), false)
 
