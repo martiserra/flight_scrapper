@@ -1,6 +1,7 @@
 require 'mechanize'
 require_relative '../search_criteria'
 require_relative '../flight_segment'
+require_relative '../search_results'
 
 module FlightScrapper
 
@@ -28,21 +29,10 @@ module FlightScrapper
     }
 
     def self.parse_availability results_page, search_criteria 
-      
-      
-      outbound_days = results_page.search(OUTBOUND_DAYS)
-      outbound_flights = parse_day_group outbound_days, true
-      
-      inbound_days = results_page.search(INBOUND_DAYS)
-      inbound_flights = parse_day_group inbound_days, false
+      outbound_flights = parse_day_group(results_page.search(OUTBOUND_DAYS), true)
+      inbound_flights = parse_day_group(results_page.search(INBOUND_DAYS), false)
 
-      outbound_flights.each { |s|
-        puts s
-      }
-      puts "---"
-      inbound_flights.each { |s|
-        puts s
-      }
+      return SearchResults.new(outbound_flights, inbound_flights)
     end
 
     private
